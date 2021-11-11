@@ -17,6 +17,13 @@
 		F666D31B273DC2D1002599D9 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F666D305273DC2D0002599D9 /* Persistence.swift */; };
 		F666D31C273DC2D1002599D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F666D306273DC2D1002599D9 /* Assets.xcassets */; };
 		F666D31D273DC2D1002599D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F666D306273DC2D1002599D9 /* Assets.xcassets */; };
+		F666D329273DC3BE002599D9 /* Tabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F666D328273DC3BE002599D9 /* Tabs.swift */; };
+		F666D32B273DC910002599D9 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F666D32A273DC910002599D9 /* ViewRouter.swift */; };
+		F666D32D273DCC1F002599D9 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = F666D32C273DCC1F002599D9 /* Home.swift */; };
+		F666D32F273DCC31002599D9 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F666D32E273DCC31002599D9 /* Settings.swift */; };
+		F666D331273DD00A002599D9 /* Homework.swift in Sources */ = {isa = PBXBuildFile; fileRef = F666D330273DD00A002599D9 /* Homework.swift */; };
+		F666D333273DD010002599D9 /* Exams.swift in Sources */ = {isa = PBXBuildFile; fileRef = F666D332273DD010002599D9 /* Exams.swift */; };
+		F666D335273DD0E2002599D9 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F666D334273DD0E2002599D9 /* Timer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +35,13 @@
 		F666D30B273DC2D1002599D9 /* TU Berlin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TU Berlin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F666D311273DC2D1002599D9 /* TU Berlin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TU Berlin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F666D313273DC2D1002599D9 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		F666D328273DC3BE002599D9 /* Tabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabs.swift; sourceTree = "<group>"; };
+		F666D32A273DC910002599D9 /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
+		F666D32C273DCC1F002599D9 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		F666D32E273DCC31002599D9 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		F666D330273DD00A002599D9 /* Homework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homework.swift; sourceTree = "<group>"; };
+		F666D332273DD010002599D9 /* Exams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exams.swift; sourceTree = "<group>"; };
+		F666D334273DD0E2002599D9 /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +65,7 @@
 		F666D2FB273DC2D0002599D9 = {
 			isa = PBXGroup;
 			children = (
+				F666D32A273DC910002599D9 /* ViewRouter.swift */,
 				F666D300273DC2D0002599D9 /* Shared */,
 				F666D312273DC2D1002599D9 /* macOS */,
 				F666D30C273DC2D1002599D9 /* Products */,
@@ -62,6 +77,12 @@
 			children = (
 				F666D303273DC2D0002599D9 /* TU_BerlinApp.swift */,
 				F666D304273DC2D0002599D9 /* ContentView.swift */,
+				F666D328273DC3BE002599D9 /* Tabs.swift */,
+				F666D32C273DCC1F002599D9 /* Home.swift */,
+				F666D330273DD00A002599D9 /* Homework.swift */,
+				F666D332273DD010002599D9 /* Exams.swift */,
+				F666D334273DD0E2002599D9 /* Timer.swift */,
+				F666D32E273DCC31002599D9 /* Settings.swift */,
 				F666D305273DC2D0002599D9 /* Persistence.swift */,
 				F666D306273DC2D1002599D9 /* Assets.xcassets */,
 				F666D301273DC2D0002599D9 /* TU_Berlin.xcdatamodeld */,
@@ -186,8 +207,15 @@
 			files = (
 				F666D316273DC2D1002599D9 /* TU_BerlinApp.swift in Sources */,
 				F666D31A273DC2D1002599D9 /* Persistence.swift in Sources */,
+				F666D333273DD010002599D9 /* Exams.swift in Sources */,
+				F666D331273DD00A002599D9 /* Homework.swift in Sources */,
+				F666D32F273DCC31002599D9 /* Settings.swift in Sources */,
 				F666D314273DC2D1002599D9 /* TU_Berlin.xcdatamodeld in Sources */,
+				F666D32B273DC910002599D9 /* ViewRouter.swift in Sources */,
+				F666D329273DC3BE002599D9 /* Tabs.swift in Sources */,
 				F666D318273DC2D1002599D9 /* ContentView.swift in Sources */,
+				F666D335273DD0E2002599D9 /* Timer.swift in Sources */,
+				F666D32D273DCC1F002599D9 /* Home.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,7 +359,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -361,7 +389,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

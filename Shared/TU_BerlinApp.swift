@@ -10,10 +10,11 @@ import SwiftUI
 @main
 struct TU_BerlinApp: App {
     let persistenceController = PersistenceController.shared
-
+    
+    @StateObject var viewRouter = ViewRouter()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(viewRouter: viewRouter)
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
