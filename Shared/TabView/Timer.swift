@@ -17,7 +17,7 @@ struct Timer: View {
                         CustomNavLink(icon: "clock", text: "start timer", target: AnyView(Text("coming soon")))
                     }.padding()
                 }
-                .navigationTitle("Pomodoro Timer")
+                .navigationTitle("Timer")
                 .toolbar {
                     ToolbarItem(placement: .navigationBarTrailing) {
                         Button {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F61380A62756D3B80020D0D9 /* AddHomeworkSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61380A52756D3B80020D0D9 /* AddHomeworkSheet.swift */; };
 		F66511332747DCD20043ECCC /* Homework+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F665112D2747DCD20043ECCC /* Homework+CoreDataClass.swift */; };
 		F66511342747DCD20043ECCC /* Homework+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F665112E2747DCD20043ECCC /* Homework+CoreDataProperties.swift */; };
 		F66511352747DCD20043ECCC /* Exam+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F665112F2747DCD20043ECCC /* Exam+CoreDataClass.swift */; };
@@ -36,9 +37,13 @@
 		F69F69F7273FD846008A42A4 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F666D32A273DC910002599D9 /* ViewRouter.swift */; };
 		F69F69F9273FD8BB008A42A4 /* Grades.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69F69F8273FD8BB008A42A4 /* Grades.swift */; };
 		F6B77D492747E0EE000DE3E6 /* KeycardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B77D482747E0EE000DE3E6 /* KeycardView.swift */; };
+		F6B77D4C2747E34A000DE3E6 /* KeyCard+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B77D4A2747E34A000DE3E6 /* KeyCard+CoreDataClass.swift */; };
+		F6B77D4D2747E34A000DE3E6 /* KeyCard+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B77D4B2747E34A000DE3E6 /* KeyCard+CoreDataProperties.swift */; };
+		F6B77D502747E590000DE3E6 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B77D4F2747E590000DE3E6 /* SafariView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F61380A52756D3B80020D0D9 /* AddHomeworkSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHomeworkSheet.swift; sourceTree = "<group>"; };
 		F665112D2747DCD20043ECCC /* Homework+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Homework+CoreDataClass.swift"; sourceTree = "<group>"; };
 		F665112E2747DCD20043ECCC /* Homework+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Homework+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		F665112F2747DCD20043ECCC /* Exam+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Exam+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -65,6 +70,9 @@
 		F69F69F3273FD6F2008A42A4 /* CustomTabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabItem.swift; sourceTree = "<group>"; };
 		F69F69F8273FD8BB008A42A4 /* Grades.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grades.swift; sourceTree = "<group>"; };
 		F6B77D482747E0EE000DE3E6 /* KeycardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeycardView.swift; sourceTree = "<group>"; };
+		F6B77D4A2747E34A000DE3E6 /* KeyCard+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyCard+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F6B77D4B2747E34A000DE3E6 /* KeyCard+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyCard+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F6B77D4F2747E590000DE3E6 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +96,8 @@
 		F666D2FB273DC2D0002599D9 = {
 			isa = PBXGroup;
 			children = (
+				F6B77D4A2747E34A000DE3E6 /* KeyCard+CoreDataClass.swift */,
+				F6B77D4B2747E34A000DE3E6 /* KeyCard+CoreDataProperties.swift */,
 				F665112D2747DCD20043ECCC /* Homework+CoreDataClass.swift */,
 				F665112E2747DCD20043ECCC /* Homework+CoreDataProperties.swift */,
 				F665112F2747DCD20043ECCC /* Exam+CoreDataClass.swift */,
@@ -109,6 +119,7 @@
 				F69F69F6273FD7AD008A42A4 /* TabView */,
 				F666D336273DD9A9002599D9 /* Custom Structures */,
 				F69F69F5273FD78B008A42A4 /* Backend */,
+				F6B77D4E2747E45F000DE3E6 /* Views */,
 				F666D305273DC2D0002599D9 /* Persistence.swift */,
 				F666D306273DC2D1002599D9 /* Assets.xcassets */,
 				F666D301273DC2D0002599D9 /* TU_Berlin.xcdatamodeld */,
@@ -157,12 +168,21 @@
 				F666D32C273DCC1F002599D9 /* Home.swift */,
 				F69F69F8273FD8BB008A42A4 /* Grades.swift */,
 				F666D330273DD00A002599D9 /* HomeworkView.swift */,
+				F61380A52756D3B80020D0D9 /* AddHomeworkSheet.swift */,
 				F666D332273DD010002599D9 /* Exams.swift */,
 				F6B77D482747E0EE000DE3E6 /* KeycardView.swift */,
 				F666D334273DD0E2002599D9 /* Timer.swift */,
 				F666D32E273DCC31002599D9 /* Settings.swift */,
 			);
 			path = TabView;
+			sourceTree = "<group>";
+		};
+		F6B77D4E2747E45F000DE3E6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F6B77D4F2747E590000DE3E6 /* SafariView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +285,7 @@
 			files = (
 				F66511352747DCD20043ECCC /* Exam+CoreDataClass.swift in Sources */,
 				F66511362747DCD20043ECCC /* Exam+CoreDataProperties.swift in Sources */,
+				F6B77D4D2747E34A000DE3E6 /* KeyCard+CoreDataProperties.swift in Sources */,
 				F666D316273DC2D1002599D9 /* TU_BerlinApp.swift in Sources */,
 				F666D31A273DC2D1002599D9 /* Persistence.swift in Sources */,
 				F666D333273DD010002599D9 /* Exams.swift in Sources */,
@@ -276,10 +297,13 @@
 				F66511332747DCD20043ECCC /* Homework+CoreDataClass.swift in Sources */,
 				F666D314273DC2D1002599D9 /* TU_Berlin.xcdatamodeld in Sources */,
 				F66511372747DCD20043ECCC /* Grade+CoreDataClass.swift in Sources */,
+				F6B77D4C2747E34A000DE3E6 /* KeyCard+CoreDataClass.swift in Sources */,
+				F61380A62756D3B80020D0D9 /* AddHomeworkSheet.swift in Sources */,
 				F66511342747DCD20043ECCC /* Homework+CoreDataProperties.swift in Sources */,
 				F6B77D492747E0EE000DE3E6 /* KeycardView.swift in Sources */,
 				F666D32B273DC910002599D9 /* ViewRouter.swift in Sources */,
 				F69F69F4273FD6F2008A42A4 /* CustomTabItem.swift in Sources */,
+				F6B77D502747E590000DE3E6 /* SafariView.swift in Sources */,
 				F69F69F9273FD8BB008A42A4 /* Grades.swift in Sources */,
 				F666D329273DC3BE002599D9 /* Tabs.swift in Sources */,
 				F666D318273DC2D1002599D9 /* ContentView.swift in Sources */,

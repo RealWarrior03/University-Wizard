@@ -8,15 +8,43 @@
 import SwiftUI
 
 struct Home: View {
+    @State var showSafari: Bool = false
+    
     var body: some View {
         NavigationView {
             ZStack {
                 Color(UIColor(.secondary)).opacity(0.2).ignoresSafeArea()
                 ScrollView {
                     VStack {
-                        CustomNavLink(icon: "link", text: "TU Website", target: AnyView(Text("soon")))
-                        CustomNavLink(icon: "link", text: "ISIS", target: AnyView(Text("soon")))
-                        CustomNavLink(icon: "link", text: "Moses", target: AnyView(Text("soon")))
+                        GroupBox {
+                            Button(action: { showSafari.toggle() }) {
+                                Label("TU Website", systemImage: "link").fullScreenCover(isPresented: $showSafari) {
+                                    SafariView(url: URL(string: "https://www.tu-berlin.de")!).ignoresSafeArea(edges: .all)
+                                }
+                            }.buttonStyle(.borderedProminent)
+                        } label: {
+                            Label("TU Website", systemImage: "link")
+                        }
+                        
+                        GroupBox {
+                            Button(action: { showSafari.toggle() }) {
+                                Label("ISIS", systemImage: "link").fullScreenCover(isPresented: $showSafari) {
+                                    SafariView(url: URL(string: "https://isis.tu-berlin.de")!).ignoresSafeArea(edges: .all)
+                                }
+                            }.buttonStyle(.borderedProminent)
+                        } label: {
+                            Label("ISIS", systemImage: "link")
+                        }
+                        
+                        GroupBox {
+                            Button(action: { showSafari.toggle() }) {
+                                Label("Moses", systemImage: "link").fullScreenCover(isPresented: $showSafari) {
+                                    SafariView(url: URL(string: "https://www.moses.tu-berlin.de")!).ignoresSafeArea(edges: .all)
+                                }
+                            }.buttonStyle(.borderedProminent)
+                        } label: {
+                            Label("Moses", systemImage: "link")
+                        }
                         
                         Divider().padding(.vertical)
                         
