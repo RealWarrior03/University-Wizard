@@ -17,33 +17,25 @@ struct Home: View {
                 ScrollView {
                     VStack {
                         GroupBox {
-                            Button(action: { showSafari.toggle() }) {
-                                Label("TU Website", systemImage: "link").fullScreenCover(isPresented: $showSafari) {
-                                    SafariView(url: URL(string: "https://www.tu-berlin.de")!).ignoresSafeArea(edges: .all)
-                                }
-                            }.buttonStyle(.borderedProminent)
+                            HStack {
+                                Button(action: { showSafari.toggle() }) {
+                                    Label("TU", systemImage: "link").fullScreenCover(isPresented: $showSafari) {
+                                        SafariView(url: URL(string: "https://www.tu-berlin.de")!).ignoresSafeArea(edges: .all)
+                                    }
+                                }.buttonStyle(.borderedProminent)
+                                Button(action: { showSafari.toggle() }) {
+                                    Label("ISIS", systemImage: "link").fullScreenCover(isPresented: $showSafari) {
+                                        SafariView(url: URL(string: "https://isis.tu-berlin.de")!).ignoresSafeArea(edges: .all)
+                                    }
+                                }.buttonStyle(.borderedProminent)
+                                Button(action: { showSafari.toggle() }) {
+                                    Label("Moses", systemImage: "link").fullScreenCover(isPresented: $showSafari) {
+                                        SafariView(url: URL(string: "https://www.moses.tu-berlin.de")!).ignoresSafeArea(edges: .all)
+                                    }
+                                }.buttonStyle(.borderedProminent)
+                            }
                         } label: {
-                            Label("TU Website", systemImage: "link")
-                        }
-                        
-                        GroupBox {
-                            Button(action: { showSafari.toggle() }) {
-                                Label("ISIS", systemImage: "link").fullScreenCover(isPresented: $showSafari) {
-                                    SafariView(url: URL(string: "https://isis.tu-berlin.de")!).ignoresSafeArea(edges: .all)
-                                }
-                            }.buttonStyle(.borderedProminent)
-                        } label: {
-                            Label("ISIS", systemImage: "link")
-                        }
-                        
-                        GroupBox {
-                            Button(action: { showSafari.toggle() }) {
-                                Label("Moses", systemImage: "link").fullScreenCover(isPresented: $showSafari) {
-                                    SafariView(url: URL(string: "https://www.moses.tu-berlin.de")!).ignoresSafeArea(edges: .all)
-                                }
-                            }.buttonStyle(.borderedProminent)
-                        } label: {
-                            Label("Moses", systemImage: "link")
+                            Label("Links", systemImage: "link")
                         }
                         
                         Divider().padding(.vertical)

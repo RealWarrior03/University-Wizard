@@ -15,7 +15,7 @@ struct CustomNavLink: View {
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 15, style: .continuous)
-                .fill(Material.regular)
+                .fill(Material.thick)
             VStack {
                 NavigationLink {
                     target

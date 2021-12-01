@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F61380A62756D3B80020D0D9 /* AddHomeworkSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61380A52756D3B80020D0D9 /* AddHomeworkSheet.swift */; };
+		F614498427577160008FD3F3 /* SetWebsites.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61449832757715F008FD3F3 /* SetWebsites.swift */; };
 		F66511332747DCD20043ECCC /* Homework+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F665112D2747DCD20043ECCC /* Homework+CoreDataClass.swift */; };
 		F66511342747DCD20043ECCC /* Homework+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F665112E2747DCD20043ECCC /* Homework+CoreDataProperties.swift */; };
 		F66511352747DCD20043ECCC /* Exam+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F665112F2747DCD20043ECCC /* Exam+CoreDataClass.swift */; };
@@ -44,6 +45,7 @@
 
 /* Begin PBXFileReference section */
 		F61380A52756D3B80020D0D9 /* AddHomeworkSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHomeworkSheet.swift; sourceTree = "<group>"; };
+		F61449832757715F008FD3F3 /* SetWebsites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetWebsites.swift; sourceTree = "<group>"; };
 		F665112D2747DCD20043ECCC /* Homework+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Homework+CoreDataClass.swift"; sourceTree = "<group>"; };
 		F665112E2747DCD20043ECCC /* Homework+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Homework+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		F665112F2747DCD20043ECCC /* Exam+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Exam+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 				F6B77D482747E0EE000DE3E6 /* KeycardView.swift */,
 				F666D334273DD0E2002599D9 /* Timer.swift */,
 				F666D32E273DCC31002599D9 /* Settings.swift */,
+				F61449832757715F008FD3F3 /* SetWebsites.swift */,
 			);
 			path = TabView;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 				F66511362747DCD20043ECCC /* Exam+CoreDataProperties.swift in Sources */,
 				F6B77D4D2747E34A000DE3E6 /* KeyCard+CoreDataProperties.swift in Sources */,
 				F666D316273DC2D1002599D9 /* TU_BerlinApp.swift in Sources */,
+				F614498427577160008FD3F3 /* SetWebsites.swift in Sources */,
 				F666D31A273DC2D1002599D9 /* Persistence.swift in Sources */,
 				F666D333273DD010002599D9 /* Exams.swift in Sources */,
 				F66511382747DCD20043ECCC /* Grade+CoreDataProperties.swift in Sources */,
@@ -460,8 +464,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "hkrieger.TU-Berlin";
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = hkrieger.University.app;
 				PRODUCT_NAME = "TU Berlin";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -492,8 +496,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "hkrieger.TU-Berlin";
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = hkrieger.University.app;
 				PRODUCT_NAME = "TU Berlin";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -524,7 +528,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "hkrieger.TU-Berlin";
+				PRODUCT_BUNDLE_IDENTIFIER = hkrieger.University.app;
 				PRODUCT_NAME = "TU Berlin";
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -553,7 +557,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "hkrieger.TU-Berlin";
+				PRODUCT_BUNDLE_IDENTIFIER = hkrieger.University.app;
 				PRODUCT_NAME = "TU Berlin";
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;

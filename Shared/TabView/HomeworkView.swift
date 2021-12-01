@@ -42,7 +42,15 @@ struct HomeworkView: View {
                                         Spacer()
                                         Text(hw.subject).foregroundColor(.secondary).font(.footnote)
                                     }
-                                    Text("\(hw.due, formatter: Self.homeworkFormatter)").font(.callout)
+                                    HStack {
+                                        Text("\(hw.due, formatter: Self.homeworkFormatter)").font(.callout)
+                                        Spacer()
+                                        if hw.notify {
+                                            Circle().fill(.green).frame(width: 10, height: 10)
+                                        } else {
+                                            Circle().fill(.red).frame(width: 10, height: 10)
+                                        }
+                                    }
                                     if hw.comment != "" {
                                         Text(hw.comment).lineLimit(3)
                                     }
@@ -96,7 +104,7 @@ struct HomeworkView: View {
                                         }
                                         Spacer()
                                     }
-                                }.padding().lineSpacing(1.2)
+                                }.padding()
                             }
                         }
                     }.padding()
