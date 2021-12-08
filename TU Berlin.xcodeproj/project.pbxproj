@@ -37,6 +37,12 @@
 		F69F69F4273FD6F2008A42A4 /* CustomTabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69F69F3273FD6F2008A42A4 /* CustomTabItem.swift */; };
 		F69F69F7273FD846008A42A4 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F666D32A273DC910002599D9 /* ViewRouter.swift */; };
 		F69F69F9273FD8BB008A42A4 /* Grades.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69F69F8273FD8BB008A42A4 /* Grades.swift */; };
+		F6AC2E952760EDAB009A0798 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AC2E942760EDAB009A0798 /* Schedule.swift */; };
+		F6AC2E982760F69C009A0798 /* Appointment+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AC2E962760F69C009A0798 /* Appointment+CoreDataClass.swift */; };
+		F6AC2E992760F69C009A0798 /* Appointment+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AC2E972760F69C009A0798 /* Appointment+CoreDataProperties.swift */; };
+		F6AC2E9B27614590009A0798 /* AddSubjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AC2E9A27614590009A0798 /* AddSubjects.swift */; };
+		F6AC2E9E2761496C009A0798 /* Subjects+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AC2E9C2761496C009A0798 /* Subjects+CoreDataClass.swift */; };
+		F6AC2E9F2761496C009A0798 /* Subjects+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AC2E9D2761496C009A0798 /* Subjects+CoreDataProperties.swift */; };
 		F6B77D492747E0EE000DE3E6 /* KeycardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B77D482747E0EE000DE3E6 /* KeycardView.swift */; };
 		F6B77D4C2747E34A000DE3E6 /* KeyCard+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B77D4A2747E34A000DE3E6 /* KeyCard+CoreDataClass.swift */; };
 		F6B77D4D2747E34A000DE3E6 /* KeyCard+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B77D4B2747E34A000DE3E6 /* KeyCard+CoreDataProperties.swift */; };
@@ -71,6 +77,12 @@
 		F69F69F1273FD6CF008A42A4 /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
 		F69F69F3273FD6F2008A42A4 /* CustomTabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabItem.swift; sourceTree = "<group>"; };
 		F69F69F8273FD8BB008A42A4 /* Grades.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grades.swift; sourceTree = "<group>"; };
+		F6AC2E942760EDAB009A0798 /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
+		F6AC2E962760F69C009A0798 /* Appointment+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Appointment+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F6AC2E972760F69C009A0798 /* Appointment+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Appointment+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F6AC2E9A27614590009A0798 /* AddSubjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSubjects.swift; sourceTree = "<group>"; };
+		F6AC2E9C2761496C009A0798 /* Subjects+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Subjects+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F6AC2E9D2761496C009A0798 /* Subjects+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Subjects+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		F6B77D482747E0EE000DE3E6 /* KeycardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeycardView.swift; sourceTree = "<group>"; };
 		F6B77D4A2747E34A000DE3E6 /* KeyCard+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyCard+CoreDataClass.swift"; sourceTree = "<group>"; };
 		F6B77D4B2747E34A000DE3E6 /* KeyCard+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyCard+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -98,6 +110,10 @@
 		F666D2FB273DC2D0002599D9 = {
 			isa = PBXGroup;
 			children = (
+				F6AC2E9C2761496C009A0798 /* Subjects+CoreDataClass.swift */,
+				F6AC2E9D2761496C009A0798 /* Subjects+CoreDataProperties.swift */,
+				F6AC2E962760F69C009A0798 /* Appointment+CoreDataClass.swift */,
+				F6AC2E972760F69C009A0798 /* Appointment+CoreDataProperties.swift */,
 				F6B77D4A2747E34A000DE3E6 /* KeyCard+CoreDataClass.swift */,
 				F6B77D4B2747E34A000DE3E6 /* KeyCard+CoreDataProperties.swift */,
 				F665112D2747DCD20043ECCC /* Homework+CoreDataClass.swift */,
@@ -168,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				F666D32C273DCC1F002599D9 /* Home.swift */,
+				F6AC2E942760EDAB009A0798 /* Schedule.swift */,
 				F69F69F8273FD8BB008A42A4 /* Grades.swift */,
 				F666D330273DD00A002599D9 /* HomeworkView.swift */,
 				F61380A52756D3B80020D0D9 /* AddHomeworkSheet.swift */,
@@ -175,6 +192,7 @@
 				F6B77D482747E0EE000DE3E6 /* KeycardView.swift */,
 				F666D334273DD0E2002599D9 /* Timer.swift */,
 				F666D32E273DCC31002599D9 /* Settings.swift */,
+				F6AC2E9A27614590009A0798 /* AddSubjects.swift */,
 				F61449832757715F008FD3F3 /* SetWebsites.swift */,
 			);
 			path = TabView;
@@ -292,13 +310,16 @@
 				F666D316273DC2D1002599D9 /* TU_BerlinApp.swift in Sources */,
 				F614498427577160008FD3F3 /* SetWebsites.swift in Sources */,
 				F666D31A273DC2D1002599D9 /* Persistence.swift in Sources */,
+				F6AC2E9F2761496C009A0798 /* Subjects+CoreDataProperties.swift in Sources */,
 				F666D333273DD010002599D9 /* Exams.swift in Sources */,
 				F66511382747DCD20043ECCC /* Grade+CoreDataProperties.swift in Sources */,
 				F666D331273DD00A002599D9 /* HomeworkView.swift in Sources */,
 				F666D338273DD9BA002599D9 /* CustomNavLink.swift in Sources */,
 				F69F69F2273FD6CF008A42A4 /* CustomTabView.swift in Sources */,
 				F666D32F273DCC31002599D9 /* Settings.swift in Sources */,
+				F6AC2E992760F69C009A0798 /* Appointment+CoreDataProperties.swift in Sources */,
 				F66511332747DCD20043ECCC /* Homework+CoreDataClass.swift in Sources */,
+				F6AC2E9B27614590009A0798 /* AddSubjects.swift in Sources */,
 				F666D314273DC2D1002599D9 /* TU_Berlin.xcdatamodeld in Sources */,
 				F66511372747DCD20043ECCC /* Grade+CoreDataClass.swift in Sources */,
 				F6B77D4C2747E34A000DE3E6 /* KeyCard+CoreDataClass.swift in Sources */,
@@ -308,10 +329,13 @@
 				F666D32B273DC910002599D9 /* ViewRouter.swift in Sources */,
 				F69F69F4273FD6F2008A42A4 /* CustomTabItem.swift in Sources */,
 				F6B77D502747E590000DE3E6 /* SafariView.swift in Sources */,
+				F6AC2E982760F69C009A0798 /* Appointment+CoreDataClass.swift in Sources */,
 				F69F69F9273FD8BB008A42A4 /* Grades.swift in Sources */,
 				F666D329273DC3BE002599D9 /* Tabs.swift in Sources */,
 				F666D318273DC2D1002599D9 /* ContentView.swift in Sources */,
 				F666D335273DD0E2002599D9 /* Timer.swift in Sources */,
+				F6AC2E952760EDAB009A0798 /* Schedule.swift in Sources */,
+				F6AC2E9E2761496C009A0798 /* Subjects+CoreDataClass.swift in Sources */,
 				F666D32D273DCC1F002599D9 /* Home.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -18,6 +18,12 @@ struct AddHomeworkSheet: View {
         ],
         animation: .default)
     private var homework: FetchedResults<Homework>
+    @FetchRequest(
+        sortDescriptors: [
+            NSSortDescriptor(keyPath: \Subjects.title, ascending: true)
+        ],
+        animation: .default)
+    private var subjects: FetchedResults<Subjects>
     
     @State var title: String = ""
     @State var comment: String = ""
@@ -32,8 +38,9 @@ struct AddHomeworkSheet: View {
                 Section(header: Text("General Information")) {
                     TextField("Title", text: $title)
                     Picker("Subject", selection: $subject) {
-                        Text("Subject 1").tag("Subject 1")
-                        Text("Subject 2").tag("Subject 2")
+                        ForEach(subjects, id: \.self) { item in
+                            Text(item.title).tag(item.title)
+                        }
                     }
                     DatePicker("Due Date", selection: $due, displayedComponents: [.date, .hourAndMinute])
                 }

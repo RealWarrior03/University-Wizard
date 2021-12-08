@@ -53,6 +53,7 @@ struct Settings: View {
                         ZStack {
                             RoundedRectangle(cornerRadius: 15, style: .continuous).fill(Material.thin)
                             VStack(alignment: .leading) {
+                                CustomNavLink(icon: "clock", text: "Add Subject", target: AnyView(AddSubjects()))
                                 CustomNavLink(icon: "link", text: "Set Websites", target: AnyView(SetWebsites()))
                             }.padding()
                         }
@@ -72,7 +73,7 @@ struct Settings: View {
                     }.padding(.bottom, 20)
                     
                     VStack(alignment: .leading) {
-                        Text("Other").font(.caption).foregroundColor(.secondary).textCase(.uppercase).padding(.leading, 10)
+                        Text("Danger Zone").font(.caption).foregroundColor(.secondary).textCase(.uppercase).padding(.leading, 10)
                         ZStack {
                             RoundedRectangle(cornerRadius: 15, style: .continuous).fill(Material.thin)
                             VStack(alignment: .center) {

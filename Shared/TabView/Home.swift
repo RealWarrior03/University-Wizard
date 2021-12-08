@@ -40,6 +40,7 @@ struct Home: View {
                         
                         Divider().padding(.vertical)
                         
+                        CustomNavLink(icon: "calendar", text: "Schedule", target: AnyView(Schedule()))
                         CustomNavLink(icon: "function", text: "Grades", target: AnyView(Grades()))
                         
                         Divider().padding(.vertical)
