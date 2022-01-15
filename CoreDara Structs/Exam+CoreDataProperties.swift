@@ -17,6 +17,10 @@ extension Exam {
     }
 
     @NSManaged public var title: String
+    @NSManaged public var subject: String
+    @NSManaged public var comment: String
+    @NSManaged public var done: Bool
+    @NSManaged public var due: Date
 
 }
 

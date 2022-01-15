@@ -1,30 +1,31 @@
 //
-//  Exams.swift
+//  KeycardView.swift
 //  TU Berlin (iOS)
 //
-//  Created by Henry Krieger on 11.11.21.
+//  Created by Henry Krieger on 19.11.21.
 //
 
 import SwiftUI
 
-struct Exams: View {
+struct KeycardView: View {
     var body: some View {
         NavigationView {
             ZStack {
                 Color(UIColor(.secondary)).opacity(0.2).ignoresSafeArea()
                 ScrollView {
                     VStack {
-                        CustomNavLink(icon: "hammer", text: "create course", target: AnyView(Text("coming soon")))
+                        //CustomNavLink(icon: "hammer", text: "start quiz", target: AnyView(Text("coming soon")))
+                        Text("coming in 2022")
                     }.padding()
                 }
-                .navigationTitle("Exams")
+                .navigationTitle("Key Cards")
                 .toolbar {
                     ToolbarItem(placement: .navigationBarTrailing) {
                         Button {
                             
                         } label: {
                             Image(systemName: "plus")
-                        }
+                        }.disabled(true)
                     }
                 }
             }
@@ -32,8 +33,8 @@ struct Exams: View {
     }
 }
 
-struct Exams_Previews: PreviewProvider {
+struct KeycardView_Previews: PreviewProvider {
     static var previews: some View {
-        Exams()
+        KeycardView()
     }
 }

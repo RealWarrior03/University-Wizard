@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19574" systemVersion="21C5045a" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19574" systemVersion="21D5025f" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
     <entity name="Appointment" representedClassName="Appointment" syncable="YES">
         <attribute name="day" optional="YES" attributeType="String"/>
         <attribute name="end" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
@@ -8,6 +8,10 @@
         <attribute name="type" optional="YES" attributeType="String"/>
     </entity>
     <entity name="Exam" representedClassName="Exam" syncable="YES">
+        <attribute name="comment" optional="YES" attributeType="String"/>
+        <attribute name="done" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="due" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="subject" optional="YES" attributeType="String"/>
         <attribute name="title" optional="YES" attributeType="String"/>
     </entity>
     <entity name="Grade" representedClassName="Grade" syncable="YES">
@@ -32,12 +36,12 @@
         <attribute name="title" optional="YES" attributeType="String"/>
     </entity>
     <elements>
-        <element name="Exam" positionX="-54" positionY="0" width="128" height="44"/>
+        <element name="Appointment" positionX="-45" positionY="36" width="128" height="104"/>
+        <element name="Exam" positionX="-54" positionY="0" width="128" height="104"/>
         <element name="Grade" positionX="-36" positionY="9" width="128" height="44"/>
         <element name="Homework" positionX="-63" positionY="-9" width="128" height="134"/>
         <element name="Item" positionX="-63" positionY="-18" width="128" height="44"/>
         <element name="KeyCard" positionX="-45" positionY="18" width="128" height="44"/>
-        <element name="Appointment" positionX="-45" positionY="36" width="128" height="104"/>
         <element name="Subjects" positionX="-36" positionY="54" width="128" height="44"/>
     </elements>
 </model>

@@ -39,11 +39,11 @@ struct Schedule: View {
                 Text("Thu").tag("Thursday")
                 Text("Fri").tag("Friday")
             }.pickerStyle(.segmented)
-            Picker("", selection: $selectedType) {
+            /*Picker("", selection: $selectedType) {
                 Text("Personal").tag("Personal")
                 Text("Education").tag("Education")
                 Text("Work").tag("Work")
-            }.pickerStyle(.segmented)
+            }.pickerStyle(.segmented)*/
             ForEach(appointments, id: \.self) { item in
                 if item.day == selectedDay && item.type == selectedType {
                     Section {
@@ -69,24 +69,6 @@ struct Schedule: View {
                     addClass.toggle()
                 } label: {
                     Image(systemName: "plus")
-                }
-            }
-            ToolbarItem(placement: .navigationBarTrailing) {
-                Menu {
-                    Picker("Day", selection: $selectedDay) {
-                        Text("Monday").tag("Monday")
-                        Text("Tuesday").tag("Tuesday")
-                        Text("Wednesday").tag("Wednesday")
-                        Text("Thursday").tag("Thursday")
-                        Text("Friday").tag("Friday")
-                    }.pickerStyle(.menu)
-                    Picker("Type", selection: $selectedType) {
-                        Text("Personal").tag("Personal")
-                        Text("Education").tag("Education")
-                        Text("Work").tag("Work")
-                    }.pickerStyle(.menu)
-                } label: {
-                    Image(systemName: "gear")
                 }
             }
         }
@@ -154,11 +136,11 @@ struct AppointmentSheet: View {
                         Text("Thursday").tag("Thursday")
                         Text("Friday").tag("Friday")
                     }.pickerStyle(.menu)
-                    Picker("Type", selection: $type) {
+                    /*Picker("Type", selection: $type) {
                         Text("Personal").tag("Personal")
                         Text("Education").tag("Education")
                         Text("Work").tag("Work")
-                    }.pickerStyle(.segmented)
+                    }.pickerStyle(.segmented)*/
                 }
             }.navigationTitle("Add Class")
             .overlay {

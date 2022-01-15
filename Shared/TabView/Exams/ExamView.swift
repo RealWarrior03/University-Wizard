@@ -1,5 +1,5 @@
 //
-//  Homework.swift
+//  Exams.swift
 //  TU Berlin (iOS)
 //
 //  Created by Henry Krieger on 11.11.21.
@@ -7,30 +7,41 @@
 
 import SwiftUI
 
-struct HomeworkView: View {
+enum ExamOptions: Identifiable {
+    case add
+    case detail
+    
+    var id: Int {
+        hashValue
+    }
+}
+
+struct ExamView: View {
     @Environment(\.managedObjectContext) private var viewContext
 
     @FetchRequest(
         sortDescriptors: [
-            NSSortDescriptor(keyPath: \Homework.due, ascending: true),
-            NSSortDescriptor(keyPath: \Homework.title, ascending: true)
+            NSSortDescriptor(keyPath: \Exam.due, ascending: true),
+            NSSortDescriptor(keyPath: \Exam.title, ascending: true)
         ],
         animation: .default)
-    private var homework: FetchedResults<Homework>
+    private var exams: FetchedResults<Exam>
     
-    @State var addHomework: Bool = false
+    @State var examOptions: ExamOptions?
+    
     @State var deleteAlert: Bool = false
-    @State var hwIndex: Int = 0
+    @State var examIndex: Int = 0
     
-    static let homeworkFormatter: DateFormatter = {
+    static let examDateFormatter: DateFormatter = {
         let formatter = DateFormatter()
-        formatter.dateStyle = .long
+        formatter.dateStyle = .full
         formatter.timeStyle = .short
+        formatter.doesRelativeDateFormatting = true
         return formatter
     }()
     
     func delete(at index: Int) {
-        self.viewContext.delete(homework[index])
+        self.viewContext.delete(exams[index])
         try! self.viewContext.save()
     }
     
@@ -38,41 +49,39 @@ struct HomeworkView: View {
         NavigationView {
             ZStack {
                 Color(UIColor(.secondary)).opacity(0.2).ignoresSafeArea()
+                if exams.count == 0 {
+                    Text("No exams left🎉")
+                }
                 ScrollView {
                     VStack {
-                        ForEach(homework.indices, id: \.self) { hw in
+                        ForEach(exams.indices, id: \.self) { exam in
+                            
+                            
                             ZStack {
                                 RoundedRectangle(cornerRadius: 15, style: .continuous).fill(Material.regular)
                                 VStack(alignment: .leading) {
                                     HStack {
-                                        Text(homework[hw].title).bold()
+                                        Text(exams[exam].title).bold().font(.title3)
                                         Spacer()
-                                        Text(homework[hw].subject).foregroundColor(.secondary).font(.footnote)
+                                        Text(exams[exam].subject).foregroundColor(.secondary).font(.footnote)
                                     }
+                                    Text("\(exams[exam].due, formatter: Self.examDateFormatter)").font(.callout)
+                                    /*if homework[hw].comment != "" {
+                                        Text(homework[hw].comment).lineLimit(3).font(.footnote).foregroundColor(.secondary)
+                                    }*/
                                     HStack {
-                                        Text("\(homework[hw].due, formatter: Self.homeworkFormatter)").font(.callout)
-                                        Spacer()
-                                        if homework[hw].notify {
-                                            Circle().fill(.green).frame(width: 10, height: 10)
-                                        } else {
-                                            Circle().fill(.red).frame(width: 10, height: 10)
-                                        }
-                                    }
-                                    if homework[hw].comment != "" {
-                                        Text(homework[hw].comment).lineLimit(3)
-                                    }
-                                    HStack {
-                                        Spacer()
+                                        //Spacer()
                                         Button {
-                                            homework[hw].done.toggle()
-                                            hwIndex = hw
-                                            self.delete(at: hwIndex)
+                                            exams[exam].done.toggle()
+                                            examIndex = exam
+                                            self.delete(at: examIndex)
                                             try! viewContext.save()
                                         } label: {
                                             HStack {
                                                 Image(systemName: "checkmark")
-                                            }.frame(minWidth: UIScreen.main.bounds.width*0.33, minHeight: 25)
+                                            }.frame(maxWidth: .infinity, minHeight: 25)
                                         }.buttonStyle(.bordered)
+                                        Spacer()
                                         Menu {
                                             Section {
                                                 Button {
@@ -81,10 +90,11 @@ struct HomeworkView: View {
                                                     Label("Share", systemImage: "square.and.arrow.up")
                                                 }.disabled(true)
                                                 Button {
-                                                    
+                                                    examIndex = exam
+                                                    examOptions = .detail
                                                 } label: {
                                                     Label("View Details", systemImage: "ellipsis.circle")
-                                                }.disabled(true)
+                                                }
                                                 Button {
                                                     
                                                 } label: {
@@ -93,15 +103,15 @@ struct HomeworkView: View {
                                             }
                                             Section {
                                                 Button {
-                                                    homework[hw].done.toggle()
-                                                    hwIndex = hw
-                                                    self.delete(at: hwIndex)
+                                                    exams[exam].done.toggle()
+                                                    examIndex = exam
+                                                    self.delete(at: examIndex)
                                                     try! viewContext.save()
                                                 } label: {
                                                     Label("Complete", systemImage: "checkmark")
                                                 }
                                                 Button {
-                                                    hwIndex = hw
+                                                    examIndex = exam
                                                     deleteAlert.toggle()
                                                 } label: {
                                                     Label("Delete", systemImage: "trash")
@@ -113,40 +123,47 @@ struct HomeworkView: View {
                                             } label: {
                                                 HStack {
                                                     Image(systemName: "ellipsis")
-                                                }.frame(minWidth: UIScreen.main.bounds.width*0.33, minHeight: 25)
+                                                }.frame(maxWidth: .infinity, minHeight: 25)
                                             }.buttonStyle(.bordered)
                                         }
-                                        Spacer()
+                                        //Spacer()
                                     }
                                 }.padding()
                             }
                             .alert(isPresented: $deleteAlert) {
-                                Alert(title: Text("Delete Homework?"), message: Text("This item will be permanently removed."), primaryButton: .cancel(), secondaryButton: .destructive(Text("Delete"), action: {
-                                    self.delete(at: hwIndex)
+                                Alert(title: Text("Delete Exam?"), message: Text("This item will be permanently removed."), primaryButton: .cancel(), secondaryButton: .destructive(Text("Delete"), action: {
+                                    self.delete(at: examIndex)
                                 }))
                             }
+                            
+                            
                         }
                     }.padding()
                 }
-                .navigationTitle("Homework")
+                .navigationTitle("Exams")
                 .toolbar {
                     ToolbarItem(placement: .navigationBarTrailing) {
                         Button {
-                            addHomework.toggle()
+                            examOptions = .add
                         } label: {
                             Image(systemName: "plus")
                         }
                     }
                 }
+            }.sheet(item: $examOptions) { item in
+                switch item {
+                case .add:
+                    AddExamSheet()
+                case .detail:
+                    ExamDetailSheet(examData: self.exams[examIndex])
+                }
             }
-        }.sheet(isPresented: $addHomework) {
-            AddHomeworkSheet()
         }
     }
 }
 
-struct HomeworkView_Previews: PreviewProvider {
+struct ExamView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeworkView()
+        ExamView()
     }
 }

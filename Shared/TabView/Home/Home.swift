@@ -47,15 +47,17 @@ struct Home: View {
                         
                         CustomNavLink(icon: "gear", text: "Settings", target: AnyView(Settings()))
                         
-                        /*ForEach(0..<11, id: \.self) { item in
-                            CustomNavLink(icon: "\(item).square", text: "item \(item)", target: AnyView(Text("item \(item)")))
-                        }*/
                     }.padding().padding(.bottom, 50)
                 }.padding(.bottom, 50)
                 .navigationTitle("Home")
                 .toolbar {
                     ToolbarItem(placement: .navigationBarTrailing) {
                         Menu {
+                            NavigationLink {
+                                Settings()
+                            } label: {
+                                Label("Settings", systemImage: "gear")
+                            }
                             Text("Menu Item 1")
                             Text("Menu Item 2")
                         } label: {
