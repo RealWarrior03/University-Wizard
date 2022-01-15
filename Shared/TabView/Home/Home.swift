@@ -41,7 +41,7 @@ struct Home: View {
                         Divider().padding(.vertical)
                         
                         CustomNavLink(icon: "calendar", text: "Schedule", target: AnyView(Schedule()))
-                        CustomNavLink(icon: "function", text: "Grades", target: AnyView(Grades()))
+                        //CustomNavLink(icon: "function", text: "Grades", target: AnyView(Grades()))
                         
                         Divider().padding(.vertical)
                         
@@ -50,7 +50,7 @@ struct Home: View {
                     }.padding().padding(.bottom, 50)
                 }.padding(.bottom, 50)
                 .navigationTitle("Home")
-                .toolbar {
+                /*.toolbar {
                     ToolbarItem(placement: .navigationBarTrailing) {
                         Menu {
                             NavigationLink {
@@ -64,7 +64,7 @@ struct Home: View {
                             Image(systemName: "chevron.down")
                         }
                     }
-                }
+                }*/
             }
         }
     }
