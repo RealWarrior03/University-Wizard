@@ -29,12 +29,9 @@ struct AddExamSheet: View {
     @State var comment: String = ""
     @State var subject: String = ""
     @State var due: Date = Date()
-<<<<<<< Updated upstream
-=======
     @State var notify: Bool = false
     @State var notification: Date = Date()
     @State var id: UUID = UUID()
->>>>>>> Stashed changes
     
     var body: some View {
         NavigationView {
@@ -52,8 +49,6 @@ struct AddExamSheet: View {
                     TextEditor(text: $comment)
                 }
                 
-<<<<<<< Updated upstream
-=======
                 if UserData().allowNotifications {
                     Toggle("Set up a notification?", isOn: $notify)
                         .onChange(of: notify) { newValue in
@@ -63,8 +58,6 @@ struct AddExamSheet: View {
                         DatePicker("", selection: $notification, displayedComponents: [.date, .hourAndMinute])
                     }
                 }
-                
->>>>>>> Stashed changes
                 
             }.navigationTitle("Add Exam")
             .overlay {
@@ -79,8 +72,6 @@ struct AddExamSheet: View {
                             newExam.due = self.due
                             newExam.comment = self.comment
                             newExam.done = false
-<<<<<<< Updated upstream
-=======
                             newExam.notify = self.notify
                             newExam.notification = self.notification
                             newExam.id = self.id
@@ -97,7 +88,6 @@ struct AddExamSheet: View {
                                 ]
                                 manager.schedule()
                             }
->>>>>>> Stashed changes
                             
                             do {
                                 try viewContext.save()

@@ -8,9 +8,7 @@
 import SwiftUI
 
 struct Home: View {
-<<<<<<< Updated upstream
     @State var showSafari: Bool = false
-=======
     @FetchRequest(
         sortDescriptors: [
             NSSortDescriptor(keyPath: \Homework.due, ascending: true),
@@ -42,7 +40,6 @@ struct Home: View {
         formatter.doesRelativeDateFormatting = true
         return formatter
     }()
->>>>>>> Stashed changes
     
     var body: some View {
         NavigationView {
@@ -50,28 +47,6 @@ struct Home: View {
                 Color(UIColor(.secondary)).opacity(0.2).ignoresSafeArea()
                 ScrollView {
                     VStack {
-<<<<<<< Updated upstream
-                        GroupBox {
-                            HStack {
-                                Button(action: { showSafari.toggle() }) {
-                                    Label("TU", systemImage: "link").fullScreenCover(isPresented: $showSafari) {
-                                        SafariView(url: URL(string: "https://www.tu-berlin.de")!).ignoresSafeArea(edges: .all)
-                                    }
-                                }.buttonStyle(.borderedProminent)
-                                Button(action: { showSafari.toggle() }) {
-                                    Label("ISIS", systemImage: "link").fullScreenCover(isPresented: $showSafari) {
-                                        SafariView(url: URL(string: "https://isis.tu-berlin.de")!).ignoresSafeArea(edges: .all)
-                                    }
-                                }.buttonStyle(.borderedProminent)
-                                Button(action: { showSafari.toggle() }) {
-                                    Label("Moses", systemImage: "link").fullScreenCover(isPresented: $showSafari) {
-                                        SafariView(url: URL(string: "https://www.moses.tu-berlin.de")!).ignoresSafeArea(edges: .all)
-                                    }
-                                }.buttonStyle(.borderedProminent)
-                            }
-                        } label: {
-                            Label("Links", systemImage: "link")
-=======
                         if userData.websiteOneURL != "" || userData.websiteTwoURL != ""  || userData.websiteThreeURL != "" {
                             ZStack {
                                 RoundedRectangle(cornerRadius: 15, style: .continuous)
@@ -132,19 +107,16 @@ struct Home: View {
                             } label: {
                                 Label("Links", systemImage: "link")
                             }
->>>>>>> Stashed changes
                         }
                         
                         Divider().padding(.vertical)
                         
                         CustomNavLink(icon: "calendar", text: "Schedule", target: AnyView(Schedule()))
-<<<<<<< Updated upstream
                         //CustomNavLink(icon: "function", text: "Grades", target: AnyView(Grades()))
                         
                         Divider().padding(.vertical)
                         
                         CustomNavLink(icon: "gear", text: "Settings", target: AnyView(Settings()))
-=======
                         
                         if (homework.count > 0) {
                             Divider().padding(.vertical)
@@ -224,28 +196,10 @@ struct Home: View {
                                 Label("Next Exam", systemImage: "pencil.and.ruler.fill")
                             }
                         }
->>>>>>> Stashed changes
                         
                     }.padding().padding(.bottom, 50)
                 }.padding(.bottom, 50)
                 .navigationTitle("Home")
-<<<<<<< Updated upstream
-                /*.toolbar {
-                    ToolbarItem(placement: .navigationBarTrailing) {
-                        Menu {
-                            NavigationLink {
-                                Settings()
-                            } label: {
-                                Label("Settings", systemImage: "gear")
-                            }
-                            Text("Menu Item 1")
-                            Text("Menu Item 2")
-                        } label: {
-                            Image(systemName: "chevron.down")
-                        }
-                    }
-                }*/
-=======
                 .toolbar {
                     ToolbarItem(placement: .navigationBarTrailing) {
                         NavigationLink {
@@ -255,7 +209,6 @@ struct Home: View {
                         }
                     }
                 }
->>>>>>> Stashed changes
             }
         }
     }

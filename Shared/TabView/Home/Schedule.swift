@@ -19,11 +19,6 @@ struct Schedule: View {
         animation: .default)
     private var appointments: FetchedResults<Appointment>
     
-<<<<<<< Updated upstream
-    private let itemFormatter: DateFormatter = {
-        let formatter = DateFormatter()
-        formatter.dateStyle = .short
-=======
     @FetchRequest(
         sortDescriptors: [NSSortDescriptor(keyPath: \Categories.name, ascending: true)],
         animation: .default)
@@ -32,15 +27,10 @@ struct Schedule: View {
     private let itemFormatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateStyle = .medium
->>>>>>> Stashed changes
         formatter.timeStyle = .none
         return formatter
     }()
     
-<<<<<<< Updated upstream
-    @State var selectedDay: String = "Monday"
-    @State var selectedType: String = "Education"
-=======
     public var weekday: String {
         let f = DateFormatter()
         let string = f.weekdaySymbols[Calendar.current.component(.weekday, from: Date()) - 1]
@@ -49,7 +39,6 @@ struct Schedule: View {
     
     @State var selectedDay: String = "Monday"
     @State var selectedType: String = "University"
->>>>>>> Stashed changes
     @State var addClass: Bool = false
     
     var body: some View {
@@ -60,18 +49,6 @@ struct Schedule: View {
                 Text("Wed").tag("Wednesday")
                 Text("Thu").tag("Thursday")
                 Text("Fri").tag("Friday")
-<<<<<<< Updated upstream
-            }.pickerStyle(.segmented)
-            /*Picker("", selection: $selectedType) {
-                Text("Personal").tag("Personal")
-                Text("Education").tag("Education")
-                Text("Work").tag("Work")
-            }.pickerStyle(.segmented)*/
-            ForEach(appointments, id: \.self) { item in
-                if item.day == selectedDay && item.type == selectedType {
-                    Section {
-                        ScheduleItem(title: item.title, start: item.start, end: item.end, day: item.day, type: item.type)
-=======
                 Text("Sat").tag("Saturday")
                 Text("Sun").tag("Sunday")
             }.pickerStyle(.segmented)
@@ -88,7 +65,6 @@ struct Schedule: View {
                         } label: {
                             ScheduleItem(title: item.title, start: item.start, end: item.end, day: item.day, type: item.type)
                         }
->>>>>>> Stashed changes
                     }
                 }
             }
@@ -116,12 +92,9 @@ struct Schedule: View {
         .sheet(isPresented: $addClass) {
             AppointmentSheet(type: self.selectedType, day: self.selectedDay)
         }
-<<<<<<< Updated upstream
-=======
         .onAppear {
             self.selectedDay = weekday
         }
->>>>>>> Stashed changes
     }
 }
 
@@ -141,15 +114,11 @@ struct ScheduleItem: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-<<<<<<< Updated upstream
-            Text("\(start, formatter: itemFormatter) - \(end, formatter: itemFormatter)").font(.caption).foregroundColor(.secondary)
-=======
             HStack {
                 Text("\(start, formatter: itemFormatter) - \(end, formatter: itemFormatter)")
                 Spacer()
                 Text("\(type)")
             }.font(.caption).foregroundColor(.secondary)
->>>>>>> Stashed changes
             Text("\(title)").font(.title).bold().foregroundColor(.primary)
         }
     }
@@ -167,10 +136,6 @@ struct AppointmentSheet: View {
         animation: .default)
     private var appointments: FetchedResults<Appointment>
     
-<<<<<<< Updated upstream
-    @State var title: String = ""
-    @State var type: String
-=======
     @FetchRequest(
         sortDescriptors: [NSSortDescriptor(keyPath: \Categories.name, ascending: true)],
         animation: .default)
@@ -178,7 +143,6 @@ struct AppointmentSheet: View {
     
     @State var title: String = ""
     @State var type: String = ""
->>>>>>> Stashed changes
     @State var day: String
     @State var start: Date = Date(timeIntervalSince1970: 0)
     @State var end: Date = Date(timeIntervalSince1970: 0)
@@ -200,14 +164,6 @@ struct AppointmentSheet: View {
                         Text("Wednesday").tag("Wednesday")
                         Text("Thursday").tag("Thursday")
                         Text("Friday").tag("Friday")
-<<<<<<< Updated upstream
-                    }.pickerStyle(.menu)
-                    /*Picker("Type", selection: $type) {
-                        Text("Personal").tag("Personal")
-                        Text("Education").tag("Education")
-                        Text("Work").tag("Work")
-                    }.pickerStyle(.segmented)*/
-=======
                         Text("Saturday").tag("Saturday")
                         Text("Sunday").tag("Sunday")
                     }.pickerStyle(.menu)
@@ -216,7 +172,6 @@ struct AppointmentSheet: View {
                             Text("\(category.name)").tag(category.name)
                         }
                     }.pickerStyle(.menu)
->>>>>>> Stashed changes
                 }
             }.navigationTitle("Add Class")
             .overlay {

@@ -25,13 +25,6 @@ struct AddHomeworkSheet: View {
         animation: .default)
     private var subjects: FetchedResults<Subjects>
     
-<<<<<<< Updated upstream
-    @State var title: String = ""
-    @State var comment: String = ""
-    @State var subject: String = ""
-    @State var due: Date = Date()
-    @State var notification: Bool = false
-=======
     private let itemFormatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateStyle = .medium
@@ -45,7 +38,6 @@ struct AddHomeworkSheet: View {
     @State var id: UUID = UUID()
     @State var due: Date = UserData().defaultDueTime
     @State var notify: Bool = false
->>>>>>> Stashed changes
     @State var notifyTime: Date = Date().addingTimeInterval(86400)
     
     var body: some View {
@@ -60,19 +52,6 @@ struct AddHomeworkSheet: View {
                     }
                     DatePicker("Due Date", selection: $due, displayedComponents: [.date, .hourAndMinute])
                 }
-<<<<<<< Updated upstream
-                Section(header: Text("Comment")) {
-                    TextEditor(text: $comment)
-                }
-                Section(header: Text("Notification")) {
-                    Toggle("Notification?", isOn: $notification)
-                    if notification {
-                        DatePicker("Notification", selection: $notifyTime, displayedComponents: [.date, .hourAndMinute])
-                    }
-                }
-                
-                
-=======
                 
                 Section(header: Text("Comment")) {
                     TextEditor(text: $comment)
@@ -90,7 +69,6 @@ struct AddHomeworkSheet: View {
                     }
                 }
                 
->>>>>>> Stashed changes
             }.navigationTitle("Add Homework")
             .overlay {
                 VStack {
@@ -103,11 +81,6 @@ struct AddHomeworkSheet: View {
                             newHW.subject = self.subject
                             newHW.due = self.due
                             newHW.comment = self.comment
-<<<<<<< Updated upstream
-                            newHW.notify = self.notification
-                            newHW.notification = self.notifyTime
-                            newHW.done = false
-=======
                             newHW.notify = self.notify
                             newHW.notification = self.notifyTime
                             newHW.done = false
@@ -125,7 +98,6 @@ struct AddHomeworkSheet: View {
                                 ]
                                 manager.schedule()
                             }
->>>>>>> Stashed changes
                             
                             do {
                                 try viewContext.save()
