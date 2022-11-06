@@ -17,9 +17,12 @@ extension Homework {
     }
 
     @NSManaged public var done: Bool
-    @NSManaged public var due: Date?
+    @NSManaged public var due: Date
     @NSManaged public var subject: String
     @NSManaged public var title: String
+    @NSManaged public var comment: String
+    @NSManaged public var notification: Date
+    @NSManaged public var notify: Bool
 
 }
 

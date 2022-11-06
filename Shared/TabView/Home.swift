@@ -8,18 +8,39 @@
 import SwiftUI
 
 struct Home: View {
+    @State var showSafari: Bool = false
+    
     var body: some View {
         NavigationView {
             ZStack {
                 Color(UIColor(.secondary)).opacity(0.2).ignoresSafeArea()
                 ScrollView {
                     VStack {
-                        CustomNavLink(icon: "link", text: "TU Website", target: AnyView(Text("soon")))
-                        CustomNavLink(icon: "link", text: "ISIS", target: AnyView(Text("soon")))
-                        CustomNavLink(icon: "link", text: "Moses", target: AnyView(Text("soon")))
+                        GroupBox {
+                            HStack {
+                                Button(action: { showSafari.toggle() }) {
+                                    Label("TU", systemImage: "link").fullScreenCover(isPresented: $showSafari) {
+                                        SafariView(url: URL(string: "https://www.tu-berlin.de")!).ignoresSafeArea(edges: .all)
+                                    }
+                                }.buttonStyle(.borderedProminent)
+                                Button(action: { showSafari.toggle() }) {
+                                    Label("ISIS", systemImage: "link").fullScreenCover(isPresented: $showSafari) {
+                                        SafariView(url: URL(string: "https://isis.tu-berlin.de")!).ignoresSafeArea(edges: .all)
+                                    }
+                                }.buttonStyle(.borderedProminent)
+                                Button(action: { showSafari.toggle() }) {
+                                    Label("Moses", systemImage: "link").fullScreenCover(isPresented: $showSafari) {
+                                        SafariView(url: URL(string: "https://www.moses.tu-berlin.de")!).ignoresSafeArea(edges: .all)
+                                    }
+                                }.buttonStyle(.borderedProminent)
+                            }
+                        } label: {
+                            Label("Links", systemImage: "link")
+                        }
                         
                         Divider().padding(.vertical)
                         
+                        CustomNavLink(icon: "calendar", text: "Schedule", target: AnyView(Schedule()))
                         CustomNavLink(icon: "function", text: "Grades", target: AnyView(Grades()))
                         
                         Divider().padding(.vertical)
