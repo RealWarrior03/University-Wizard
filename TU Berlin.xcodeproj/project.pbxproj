@@ -7,16 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
 		F61380A62756D3B80020D0D9 /* AddHomeworkSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61380A52756D3B80020D0D9 /* AddHomeworkSheet.swift */; };
 		F614498427577160008FD3F3 /* SetWebsites.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61449832757715F008FD3F3 /* SetWebsites.swift */; };
 		F64F9C0E2792FAC2001898C5 /* AddExamSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64F9C0D2792FAC2001898C5 /* AddExamSheet.swift */; };
 		F64F9C102792FF20001898C5 /* ExamDetailSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64F9C0F2792FF20001898C5 /* ExamDetailSheet.swift */; };
+<<<<<<< Updated upstream
+=======
+		F64F9C1227930F20001898C5 /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64F9C1127930F20001898C5 /* About.swift */; };
+		F64F9C14279310E4001898C5 /* MailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64F9C13279310E4001898C5 /* MailView.swift */; };
+		F659AE3F27EA062900EAECD3 /* CreditsAndLegal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F659AE3E27EA062900EAECD3 /* CreditsAndLegal.swift */; };
+>>>>>>> Stashed changes
 		F66511332747DCD20043ECCC /* Homework+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F665112D2747DCD20043ECCC /* Homework+CoreDataClass.swift */; };
 		F66511342747DCD20043ECCC /* Homework+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F665112E2747DCD20043ECCC /* Homework+CoreDataProperties.swift */; };
 		F66511352747DCD20043ECCC /* Exam+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F665112F2747DCD20043ECCC /* Exam+CoreDataClass.swift */; };
 		F66511362747DCD20043ECCC /* Exam+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66511302747DCD20043ECCC /* Exam+CoreDataProperties.swift */; };
 		F66511372747DCD20043ECCC /* Grade+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66511312747DCD20043ECCC /* Grade+CoreDataClass.swift */; };
 		F66511382747DCD20043ECCC /* Grade+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66511322747DCD20043ECCC /* Grade+CoreDataProperties.swift */; };
+<<<<<<< Updated upstream
+=======
+		F6660CC327DBB723007DAC43 /* EditHomeworkSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6660CC227DBB723007DAC43 /* EditHomeworkSheet.swift */; };
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 		F666D314273DC2D1002599D9 /* TU_Berlin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F666D301273DC2D0002599D9 /* TU_Berlin.xcdatamodeld */; };
 		F666D315273DC2D1002599D9 /* TU_Berlin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F666D301273DC2D0002599D9 /* TU_Berlin.xcdatamodeld */; };
 		F666D316273DC2D1002599D9 /* TU_BerlinApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F666D303273DC2D0002599D9 /* TU_BerlinApp.swift */; };
@@ -34,6 +50,7 @@
 		F666D331273DD00A002599D9 /* HomeworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F666D330273DD00A002599D9 /* HomeworkView.swift */; };
 		F666D333273DD010002599D9 /* ExamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F666D332273DD010002599D9 /* ExamView.swift */; };
 		F666D335273DD0E2002599D9 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F666D334273DD0E2002599D9 /* Timer.swift */; };
+<<<<<<< Updated upstream
 		F666D338273DD9BA002599D9 /* CustomNavLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = F666D337273DD9BA002599D9 /* CustomNavLink.swift */; };
 		F69F69F2273FD6CF008A42A4 /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69F69F1273FD6CF008A42A4 /* CustomTabView.swift */; };
 		F69F69F4273FD6F2008A42A4 /* CustomTabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69F69F3273FD6F2008A42A4 /* CustomTabItem.swift */; };
@@ -53,22 +70,65 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+=======
+<<<<<<< Updated upstream
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+=======
+		F666D338273DD9BA002599D9 /* CustomNavLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = F666D337273DD9BA002599D9 /* CustomNavLink.swift */; };
+		F69F69F2273FD6CF008A42A4 /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69F69F1273FD6CF008A42A4 /* CustomTabView.swift */; };
+		F69F69F4273FD6F2008A42A4 /* CustomTabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69F69F3273FD6F2008A42A4 /* CustomTabItem.swift */; };
+		F69F69F7273FD846008A42A4 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F666D32A273DC910002599D9 /* ViewRouter.swift */; };
+		F69F69F9273FD8BB008A42A4 /* Grades.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69F69F8273FD8BB008A42A4 /* Grades.swift */; };
+		F6A617C127DA8E9200F6C8A3 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A617C027DA8E9200F6C8A3 /* Notifications.swift */; };
+		F6A617C227DA8E9200F6C8A3 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A617C027DA8E9200F6C8A3 /* Notifications.swift */; };
+		F6AC2E952760EDAB009A0798 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AC2E942760EDAB009A0798 /* Schedule.swift */; };
+		F6AC2E982760F69C009A0798 /* Appointment+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AC2E962760F69C009A0798 /* Appointment+CoreDataClass.swift */; };
+		F6AC2E992760F69C009A0798 /* Appointment+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AC2E972760F69C009A0798 /* Appointment+CoreDataProperties.swift */; };
+		F6AC2E9B27614590009A0798 /* AddSubjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AC2E9A27614590009A0798 /* AddSubjects.swift */; };
+		F6AC2E9E2761496C009A0798 /* Subjects+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AC2E9C2761496C009A0798 /* Subjects+CoreDataClass.swift */; };
+		F6AC2E9F2761496C009A0798 /* Subjects+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AC2E9D2761496C009A0798 /* Subjects+CoreDataProperties.swift */; };
+		F6AC2EA7276201AF009A0798 /* HomeworkDetailSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AC2EA6276201AF009A0798 /* HomeworkDetailSheet.swift */; };
+		F6B1818428E22CF100447177 /* Categories+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B1818228E22CF100447177 /* Categories+CoreDataClass.swift */; };
+		F6B1818528E22CF100447177 /* Categories+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B1818328E22CF100447177 /* Categories+CoreDataProperties.swift */; };
+		F6B1818728E22F3100447177 /* SetCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B1818628E22F3100447177 /* SetCategories.swift */; };
+		F6B181D328EC9FC000447177 /* EditExamSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B181D228EC9FC000447177 /* EditExamSheet.swift */; };
+		F6B77D492747E0EE000DE3E6 /* KeycardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B77D482747E0EE000DE3E6 /* KeycardView.swift */; };
+		F6B77D4C2747E34A000DE3E6 /* KeyCard+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B77D4A2747E34A000DE3E6 /* KeyCard+CoreDataClass.swift */; };
+		F6B77D4D2747E34A000DE3E6 /* KeyCard+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B77D4B2747E34A000DE3E6 /* KeyCard+CoreDataProperties.swift */; };
+		F6B77D502747E590000DE3E6 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B77D4F2747E590000DE3E6 /* SafariView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+>>>>>>> Stashed changes
 		F61380A52756D3B80020D0D9 /* AddHomeworkSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHomeworkSheet.swift; sourceTree = "<group>"; };
 		F61449832757715F008FD3F3 /* SetWebsites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetWebsites.swift; sourceTree = "<group>"; };
 		F64F9C0D2792FAC2001898C5 /* AddExamSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExamSheet.swift; sourceTree = "<group>"; };
 		F64F9C0F2792FF20001898C5 /* ExamDetailSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamDetailSheet.swift; sourceTree = "<group>"; };
+<<<<<<< Updated upstream
+=======
+		F64F9C1127930F20001898C5 /* About.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
+		F64F9C13279310E4001898C5 /* MailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailView.swift; sourceTree = "<group>"; };
+		F659AE3E27EA062900EAECD3 /* CreditsAndLegal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsAndLegal.swift; sourceTree = "<group>"; };
+>>>>>>> Stashed changes
 		F665112D2747DCD20043ECCC /* Homework+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Homework+CoreDataClass.swift"; sourceTree = "<group>"; };
 		F665112E2747DCD20043ECCC /* Homework+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Homework+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		F665112F2747DCD20043ECCC /* Exam+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Exam+CoreDataClass.swift"; sourceTree = "<group>"; };
 		F66511302747DCD20043ECCC /* Exam+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Exam+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		F66511312747DCD20043ECCC /* Grade+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Grade+CoreDataClass.swift"; sourceTree = "<group>"; };
 		F66511322747DCD20043ECCC /* Grade+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Grade+CoreDataProperties.swift"; sourceTree = "<group>"; };
+<<<<<<< Updated upstream
+=======
+		F6660CC227DBB723007DAC43 /* EditHomeworkSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditHomeworkSheet.swift; sourceTree = "<group>"; };
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 		F666D302273DC2D0002599D9 /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
 		F666D303273DC2D0002599D9 /* TU_BerlinApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TU_BerlinApp.swift; sourceTree = "<group>"; };
 		F666D304273DC2D0002599D9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F666D305273DC2D0002599D9 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		F666D306273DC2D1002599D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F666D30B273DC2D1002599D9 /* TU Berlin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TU Berlin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F666D30B273DC2D1002599D9 /* University.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = University.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F666D311273DC2D1002599D9 /* TU Berlin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TU Berlin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F666D313273DC2D1002599D9 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		F666D328273DC3BE002599D9 /* Tabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabs.swift; sourceTree = "<group>"; };
@@ -78,10 +138,19 @@
 		F666D330273DD00A002599D9 /* HomeworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeworkView.swift; sourceTree = "<group>"; };
 		F666D332273DD010002599D9 /* ExamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamView.swift; sourceTree = "<group>"; };
 		F666D334273DD0E2002599D9 /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
 		F666D337273DD9BA002599D9 /* CustomNavLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavLink.swift; sourceTree = "<group>"; };
 		F69F69F1273FD6CF008A42A4 /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
 		F69F69F3273FD6F2008A42A4 /* CustomTabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabItem.swift; sourceTree = "<group>"; };
 		F69F69F8273FD8BB008A42A4 /* Grades.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grades.swift; sourceTree = "<group>"; };
+<<<<<<< Updated upstream
+=======
+		F6A617C027DA8E9200F6C8A3 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+>>>>>>> Stashed changes
 		F6AC2E942760EDAB009A0798 /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
 		F6AC2E962760F69C009A0798 /* Appointment+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Appointment+CoreDataClass.swift"; sourceTree = "<group>"; };
 		F6AC2E972760F69C009A0798 /* Appointment+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Appointment+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -89,10 +158,21 @@
 		F6AC2E9C2761496C009A0798 /* Subjects+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Subjects+CoreDataClass.swift"; sourceTree = "<group>"; };
 		F6AC2E9D2761496C009A0798 /* Subjects+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Subjects+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		F6AC2EA6276201AF009A0798 /* HomeworkDetailSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeworkDetailSheet.swift; sourceTree = "<group>"; };
+<<<<<<< Updated upstream
+=======
+		F6B1818228E22CF100447177 /* Categories+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Categories+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F6B1818328E22CF100447177 /* Categories+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Categories+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F6B1818628E22F3100447177 /* SetCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetCategories.swift; sourceTree = "<group>"; };
+		F6B181D228EC9FC000447177 /* EditExamSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditExamSheet.swift; sourceTree = "<group>"; };
+>>>>>>> Stashed changes
 		F6B77D482747E0EE000DE3E6 /* KeycardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeycardView.swift; sourceTree = "<group>"; };
 		F6B77D4A2747E34A000DE3E6 /* KeyCard+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyCard+CoreDataClass.swift"; sourceTree = "<group>"; };
 		F6B77D4B2747E34A000DE3E6 /* KeyCard+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyCard+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		F6B77D4F2747E590000DE3E6 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,7 +223,7 @@
 		F666D30C273DC2D1002599D9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F666D30B273DC2D1002599D9 /* TU Berlin.app */,
+				F666D30B273DC2D1002599D9 /* University.app */,
 				F666D311273DC2D1002599D9 /* TU Berlin.app */,
 			);
 			name = Products;
@@ -157,6 +237,11 @@
 			path = macOS;
 			sourceTree = "<group>";
 		};
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
 		F666D336273DD9A9002599D9 /* Custom Structures */ = {
 			isa = PBXGroup;
 			children = (
@@ -171,6 +256,10 @@
 			isa = PBXGroup;
 			children = (
 				F666D32A273DC910002599D9 /* ViewRouter.swift */,
+<<<<<<< Updated upstream
+=======
+				F6A617C027DA8E9200F6C8A3 /* Notifications.swift */,
+>>>>>>> Stashed changes
 			);
 			path = Backend;
 			sourceTree = "<group>";
@@ -204,6 +293,10 @@
 				F666D330273DD00A002599D9 /* HomeworkView.swift */,
 				F6AC2EA6276201AF009A0798 /* HomeworkDetailSheet.swift */,
 				F61380A52756D3B80020D0D9 /* AddHomeworkSheet.swift */,
+<<<<<<< Updated upstream
+=======
+				F6660CC227DBB723007DAC43 /* EditHomeworkSheet.swift */,
+>>>>>>> Stashed changes
 			);
 			path = Homework;
 			sourceTree = "<group>";
@@ -214,6 +307,10 @@
 				F666D332273DD010002599D9 /* ExamView.swift */,
 				F64F9C0F2792FF20001898C5 /* ExamDetailSheet.swift */,
 				F64F9C0D2792FAC2001898C5 /* AddExamSheet.swift */,
+<<<<<<< Updated upstream
+=======
+				F6B181D228EC9FC000447177 /* EditExamSheet.swift */,
+>>>>>>> Stashed changes
 			);
 			path = Exams;
 			sourceTree = "<group>";
@@ -240,6 +337,12 @@
 				F666D32E273DCC31002599D9 /* Settings.swift */,
 				F6AC2E9A27614590009A0798 /* AddSubjects.swift */,
 				F61449832757715F008FD3F3 /* SetWebsites.swift */,
+<<<<<<< Updated upstream
+=======
+				F6B1818628E22F3100447177 /* SetCategories.swift */,
+				F64F9C1127930F20001898C5 /* About.swift */,
+				F659AE3E27EA062900EAECD3 /* CreditsAndLegal.swift */,
+>>>>>>> Stashed changes
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -247,6 +350,10 @@
 		F6B77D4E2747E45F000DE3E6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< Updated upstream
+=======
+				F64F9C13279310E4001898C5 /* MailView.swift */,
+>>>>>>> Stashed changes
 				F6B77D4F2747E590000DE3E6 /* SafariView.swift */,
 			);
 			path = Views;
@@ -255,6 +362,11 @@
 		F6E704332773244F00E1C19F /* CoreDara Structs */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< Updated upstream
+=======
+				F6B1818228E22CF100447177 /* Categories+CoreDataClass.swift */,
+				F6B1818328E22CF100447177 /* Categories+CoreDataProperties.swift */,
+>>>>>>> Stashed changes
 				F6AC2E9C2761496C009A0798 /* Subjects+CoreDataClass.swift */,
 				F6AC2E9D2761496C009A0798 /* Subjects+CoreDataProperties.swift */,
 				F6AC2E962760F69C009A0798 /* Appointment+CoreDataClass.swift */,
@@ -271,6 +383,10 @@
 			path = "CoreDara Structs";
 			sourceTree = "<group>";
 		};
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -288,7 +404,7 @@
 			);
 			name = "TU Berlin (iOS)";
 			productName = "TU Berlin (iOS)";
-			productReference = F666D30B273DC2D1002599D9 /* TU Berlin.app */;
+			productReference = F666D30B273DC2D1002599D9 /* University.app */;
 			productType = "com.apple.product-type.application";
 		};
 		F666D310273DC2D1002599D9 /* TU Berlin (macOS) */ = {
@@ -316,7 +432,15 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1300;
+<<<<<<< Updated upstream
 				LastUpgradeCheck = 1310;
+=======
+<<<<<<< Updated upstream
+				LastUpgradeCheck = 1300;
+=======
+				LastUpgradeCheck = 1400;
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 				TargetAttributes = {
 					F666D30A273DC2D1002599D9 = {
 						CreatedOnToolsVersion = 13.0;
@@ -375,6 +499,7 @@
 				F666D316273DC2D1002599D9 /* TU_BerlinApp.swift in Sources */,
 				F614498427577160008FD3F3 /* SetWebsites.swift in Sources */,
 				F666D31A273DC2D1002599D9 /* Persistence.swift in Sources */,
+<<<<<<< Updated upstream
 				F6AC2E9F2761496C009A0798 /* Subjects+CoreDataProperties.swift in Sources */,
 				F666D333273DD010002599D9 /* ExamView.swift in Sources */,
 				F66511382747DCD20043ECCC /* Grade+CoreDataProperties.swift in Sources */,
@@ -382,6 +507,11 @@
 				F6AC2EA7276201AF009A0798 /* HomeworkDetailSheet.swift in Sources */,
 				F666D338273DD9BA002599D9 /* CustomNavLink.swift in Sources */,
 				F69F69F2273FD6CF008A42A4 /* CustomTabView.swift in Sources */,
+=======
+<<<<<<< Updated upstream
+				F666D333273DD010002599D9 /* Exams.swift in Sources */,
+				F666D331273DD00A002599D9 /* Homework.swift in Sources */,
+>>>>>>> Stashed changes
 				F666D32F273DCC31002599D9 /* Settings.swift in Sources */,
 				F6AC2E992760F69C009A0798 /* Appointment+CoreDataProperties.swift in Sources */,
 				F64F9C102792FF20001898C5 /* ExamDetailSheet.swift in Sources */,
@@ -402,8 +532,51 @@
 				F666D329273DC3BE002599D9 /* Tabs.swift in Sources */,
 				F666D318273DC2D1002599D9 /* ContentView.swift in Sources */,
 				F666D335273DD0E2002599D9 /* Timer.swift in Sources */,
+<<<<<<< Updated upstream
 				F6AC2E952760EDAB009A0798 /* Schedule.swift in Sources */,
 				F6AC2E9E2761496C009A0798 /* Subjects+CoreDataClass.swift in Sources */,
+=======
+=======
+				F6AC2E9F2761496C009A0798 /* Subjects+CoreDataProperties.swift in Sources */,
+				F666D333273DD010002599D9 /* ExamView.swift in Sources */,
+				F66511382747DCD20043ECCC /* Grade+CoreDataProperties.swift in Sources */,
+				F6B181D328EC9FC000447177 /* EditExamSheet.swift in Sources */,
+				F6B1818428E22CF100447177 /* Categories+CoreDataClass.swift in Sources */,
+				F666D331273DD00A002599D9 /* HomeworkView.swift in Sources */,
+				F6AC2EA7276201AF009A0798 /* HomeworkDetailSheet.swift in Sources */,
+				F666D338273DD9BA002599D9 /* CustomNavLink.swift in Sources */,
+				F69F69F2273FD6CF008A42A4 /* CustomTabView.swift in Sources */,
+				F666D32F273DCC31002599D9 /* Settings.swift in Sources */,
+				F6AC2E992760F69C009A0798 /* Appointment+CoreDataProperties.swift in Sources */,
+				F64F9C1227930F20001898C5 /* About.swift in Sources */,
+				F64F9C102792FF20001898C5 /* ExamDetailSheet.swift in Sources */,
+				F66511332747DCD20043ECCC /* Homework+CoreDataClass.swift in Sources */,
+				F6A617C127DA8E9200F6C8A3 /* Notifications.swift in Sources */,
+				F6AC2E9B27614590009A0798 /* AddSubjects.swift in Sources */,
+				F666D314273DC2D1002599D9 /* TU_Berlin.xcdatamodeld in Sources */,
+				F66511372747DCD20043ECCC /* Grade+CoreDataClass.swift in Sources */,
+				F6B77D4C2747E34A000DE3E6 /* KeyCard+CoreDataClass.swift in Sources */,
+				F6B1818528E22CF100447177 /* Categories+CoreDataProperties.swift in Sources */,
+				F64F9C0E2792FAC2001898C5 /* AddExamSheet.swift in Sources */,
+				F64F9C14279310E4001898C5 /* MailView.swift in Sources */,
+				F61380A62756D3B80020D0D9 /* AddHomeworkSheet.swift in Sources */,
+				F66511342747DCD20043ECCC /* Homework+CoreDataProperties.swift in Sources */,
+				F6B77D492747E0EE000DE3E6 /* KeycardView.swift in Sources */,
+				F666D32B273DC910002599D9 /* ViewRouter.swift in Sources */,
+				F6660CC327DBB723007DAC43 /* EditHomeworkSheet.swift in Sources */,
+				F6B1818728E22F3100447177 /* SetCategories.swift in Sources */,
+				F69F69F4273FD6F2008A42A4 /* CustomTabItem.swift in Sources */,
+				F6B77D502747E590000DE3E6 /* SafariView.swift in Sources */,
+				F6AC2E982760F69C009A0798 /* Appointment+CoreDataClass.swift in Sources */,
+				F69F69F9273FD8BB008A42A4 /* Grades.swift in Sources */,
+				F666D329273DC3BE002599D9 /* Tabs.swift in Sources */,
+				F666D318273DC2D1002599D9 /* ContentView.swift in Sources */,
+				F666D335273DD0E2002599D9 /* Timer.swift in Sources */,
+				F659AE3F27EA062900EAECD3 /* CreditsAndLegal.swift in Sources */,
+				F6AC2E952760EDAB009A0798 /* Schedule.swift in Sources */,
+				F6AC2E9E2761496C009A0798 /* Subjects+CoreDataClass.swift in Sources */,
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 				F666D32D273DCC1F002599D9 /* Home.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,7 +585,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< Updated upstream
 				F69F69F7273FD846008A42A4 /* ViewRouter.swift in Sources */,
+=======
+<<<<<<< Updated upstream
+=======
+				F6A617C227DA8E9200F6C8A3 /* Notifications.swift in Sources */,
+				F69F69F7273FD846008A42A4 /* ViewRouter.swift in Sources */,
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 				F666D317273DC2D1002599D9 /* TU_BerlinApp.swift in Sources */,
 				F666D31B273DC2D1002599D9 /* Persistence.swift in Sources */,
 				F666D315273DC2D1002599D9 /* TU_Berlin.xcdatamodeld in Sources */,
@@ -457,6 +638,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -516,6 +698,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -556,10 +739,23 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+<<<<<<< Updated upstream
 				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = hkrieger.University.app;
+=======
+				MARKETING_VERSION = 1.0;
+<<<<<<< Updated upstream
+				PRODUCT_BUNDLE_IDENTIFIER = "hkrieger.TU-Berlin";
+>>>>>>> Stashed changes
 				PRODUCT_NAME = "TU Berlin";
+=======
+				PRODUCT_BUNDLE_IDENTIFIER = hkrieger.University.app;
+				PRODUCT_NAME = University;
+>>>>>>> Stashed changes
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -588,10 +784,23 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+<<<<<<< Updated upstream
 				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = hkrieger.University.app;
+=======
+				MARKETING_VERSION = 1.0;
+<<<<<<< Updated upstream
+				PRODUCT_BUNDLE_IDENTIFIER = "hkrieger.TU-Berlin";
+>>>>>>> Stashed changes
 				PRODUCT_NAME = "TU Berlin";
+=======
+				PRODUCT_BUNDLE_IDENTIFIER = hkrieger.University.app;
+				PRODUCT_NAME = University;
+>>>>>>> Stashed changes
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -609,6 +818,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 2Q47C6R257;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -638,6 +848,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 2Q47C6R257;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;

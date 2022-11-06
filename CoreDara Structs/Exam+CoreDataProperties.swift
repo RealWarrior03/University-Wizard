@@ -21,6 +21,13 @@ extension Exam {
     @NSManaged public var comment: String
     @NSManaged public var done: Bool
     @NSManaged public var due: Date
+<<<<<<< Updated upstream
+=======
+    @NSManaged public var id: UUID
+    @NSManaged public var notification: Date
+    @NSManaged public var notify: Bool
+    @NSManaged public var state: String
+>>>>>>> Stashed changes
 
 }
 
