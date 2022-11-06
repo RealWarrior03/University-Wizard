@@ -20,7 +20,7 @@ struct Tabs: View {
                 case .homework:
                     HomeworkView()
                 case .exams:
-                    Exams()
+                    ExamView()
                 case .keycards:
                     KeycardView()
                 case .timer:

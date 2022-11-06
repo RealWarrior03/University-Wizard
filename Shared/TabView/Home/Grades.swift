@@ -14,7 +14,7 @@ struct Grades: View {
                 Color(UIColor(.secondary)).opacity(0.2).ignoresSafeArea()
                 ScrollView {
                     VStack {
-                        CustomNavLink(icon: "hammer", text: "add grade", target: AnyView(Text("coming soon")))
+                        Text("coming soon")
                     }.padding()
                 }
                 .navigationTitle("Grades")
@@ -24,7 +24,7 @@ struct Grades: View {
                             
                         } label: {
                             Image(systemName: "plus")
-                        }
+                        }.disabled(true)
                     }
                 }
             }

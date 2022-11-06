@@ -1,30 +1,30 @@
 //
-//  KeycardView.swift
+//  Timer.swift
 //  TU Berlin (iOS)
 //
-//  Created by Henry Krieger on 19.11.21.
+//  Created by Henry Krieger on 11.11.21.
 //
 
 import SwiftUI
 
-struct KeycardView: View {
+struct Timer: View {
     var body: some View {
         NavigationView {
             ZStack {
                 Color(UIColor(.secondary)).opacity(0.2).ignoresSafeArea()
                 ScrollView {
                     VStack {
-                        CustomNavLink(icon: "hammer", text: "start quiz", target: AnyView(Text("coming soon")))
+                        Text("coming in 2022")
                     }.padding()
                 }
-                .navigationTitle("Key Cards")
+                .navigationTitle("Timer")
                 .toolbar {
                     ToolbarItem(placement: .navigationBarTrailing) {
                         Button {
                             
                         } label: {
                             Image(systemName: "plus")
-                        }
+                        }.disabled(true)
                     }
                 }
             }
@@ -32,8 +32,8 @@ struct KeycardView: View {
     }
 }
 
-struct KeycardView_Previews: PreviewProvider {
+struct Timer_Previews: PreviewProvider {
     static var previews: some View {
-        KeycardView()
+        Timer()
     }
 }
