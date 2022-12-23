@@ -88,6 +88,7 @@ struct ExamView: View {
                                         HStack {
                                             //Spacer()
                                             Button {
+                                                #warning("V1.1: use TapticEngine on click")
                                                 if exams[exam].state == "upcoming" {
                                                     exams[exam].state = "done"
                                                 } else {
@@ -131,6 +132,7 @@ struct ExamView: View {
                                             
                                             Spacer()
                                             Menu {
+                                                #warning("V1.1: enable all buttons in the menu")
                                                 Section {
                                                     Button {
                                                         

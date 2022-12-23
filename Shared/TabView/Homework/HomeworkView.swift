@@ -106,6 +106,7 @@ struct HomeworkView: View {
                                         HStack {
                                             //Spacer()
                                             Button {
+                                                #warning("V1.1: use TapticEngine on click")
                                                 if homework[hw].state == "todo" {
                                                     homework[hw].state = "done"
                                                     removeNotification()
@@ -127,6 +128,7 @@ struct HomeworkView: View {
                                             }.buttonStyle(.bordered)
                                             Spacer()
                                             Menu {
+                                                #warning("V1.1: enable all buttons in the menu")
                                                 Section {
                                                     Menu {
                                                         Button {
@@ -206,6 +208,7 @@ struct HomeworkView: View {
                 .navigationTitle("Homework")
                 .toolbar {
                     ToolbarItem(placement: .navigationBarLeading) {
+                        #warning("TODO: align text to the left")
                         Picker("", selection: $showType) {
                             Text("To-Do").tag("todo")
                             Text("Done").tag("done")
@@ -243,7 +246,6 @@ func createDueDate(input: Date) -> Date {
     final.hour = start.hour
     final.minute = start.minute
     let result = Calendar.current.date(from: final)!
-    let notify = result.addingTimeInterval(-86400)
     
     return result
 }

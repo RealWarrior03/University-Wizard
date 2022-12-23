@@ -96,7 +96,7 @@ struct Settings: View {
                             }
                         }.padding(.bottom, 20)
                         
-                        #warning("V1.1: Add App Icons and Accent Colors")
+                        #warning("V2: Add App Icons and Accent Colors")
                         // COMING WITH UPDATE 1.1
                         /*VStack(alignment: .leading) {
                             Text("Customize").font(.caption).foregroundColor(.secondary).textCase(.uppercase).padding(.leading, 10)
@@ -115,10 +115,10 @@ struct Settings: View {
                             ZStack {
                                 RoundedRectangle(cornerRadius: 15, style: .continuous).fill(Material.thin)
                                 VStack(alignment: .leading) {
-                                    #warning("V1.1: Leave a Review button")
+                                    #warning("V2: Leave a Review button")
                                     //COMING WITH UPDATE 1.1
                                     //CustomNavLink(icon: "star.fill", text: "Leave a Review", target: AnyView(Text("coming soon")))
-                                    #warning("V1.1: Feedback & Help page")
+                                    #warning("V2: Feedback & Help page")
                                     //COMING WITH UPDATE 1.1
                                     //CustomNavLink(icon: "questionmark.circle.fill", text: "Feedback & Help", target: AnyView(Text("coming soon")))
                                     #warning("V1.1: Tip Jar")
@@ -175,6 +175,8 @@ struct Settings: View {
                                     } label: {
                                         Label("Delete all key cards", systemImage: "trash.fill")
                                     }.buttonStyle(.bordered).disabled(true)*/
+                                    
+                                    #warning("V1.1: add more delete buttons for each entity")
                                     
                                     Button {
                                         deleteAlert = true

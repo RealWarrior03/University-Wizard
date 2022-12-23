@@ -117,6 +117,7 @@ struct HomeworkDetailSheet: View {
                                 .frame(maxWidth: .infinity, minHeight: 25)
                             }.buttonStyle(.borderedProminent)
                             Menu {
+                                #warning("V1.1: enable all buttons in the menu")
                                 Section {
                                     Button {
                                         deleteAlert.toggle()

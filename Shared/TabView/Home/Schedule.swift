@@ -43,6 +43,7 @@ struct Schedule: View {
     
     var body: some View {
         List {
+            #warning("V2: create A/B weeks")
             Picker("", selection: $selectedDay) {
                 Text("Mon").tag("Monday")
                 Text("Tue").tag("Tuesday")

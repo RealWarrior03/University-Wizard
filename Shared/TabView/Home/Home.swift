@@ -112,12 +112,14 @@ struct Home: View {
                         Divider().padding(.vertical)
                         
                         CustomNavLink(icon: "calendar", text: "Schedule", target: AnyView(Schedule()))
+                        #warning("V2: add to-do page with weekly to-do's")
                         //CustomNavLink(icon: "function", text: "Grades", target: AnyView(Grades()))
                         
                         //Divider().padding(.vertical)
                         
                         //CustomNavLink(icon: "gear", text: "Settings", target: AnyView(Settings()))
                         
+                        #warning("V1.1: background in dark mode missing")
                         if (homework.count > 0) {
                             Divider().padding(.vertical)
                             GroupBox {
@@ -157,9 +159,9 @@ struct Home: View {
                             }
                         }
                         
+                        #warning("V1.1: background in dark mode missing")
                         if (exams.count > 0) {
                             Divider().padding(.vertical)
-                            
                             GroupBox {
                                 ZStack {
                                     RoundedRectangle(cornerRadius: 15, style: .continuous).fill(Material.regular)
