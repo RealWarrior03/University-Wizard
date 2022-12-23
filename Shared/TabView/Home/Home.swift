@@ -114,9 +114,9 @@ struct Home: View {
                         CustomNavLink(icon: "calendar", text: "Schedule", target: AnyView(Schedule()))
                         //CustomNavLink(icon: "function", text: "Grades", target: AnyView(Grades()))
                         
-                        Divider().padding(.vertical)
+                        //Divider().padding(.vertical)
                         
-                        CustomNavLink(icon: "gear", text: "Settings", target: AnyView(Settings()))
+                        //CustomNavLink(icon: "gear", text: "Settings", target: AnyView(Settings()))
                         
                         if (homework.count > 0) {
                             Divider().padding(.vertical)
