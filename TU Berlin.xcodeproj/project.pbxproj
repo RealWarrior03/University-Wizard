@@ -21,7 +21,6 @@
 		F66511372747DCD20043ECCC /* Grade+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66511312747DCD20043ECCC /* Grade+CoreDataClass.swift */; };
 		F66511382747DCD20043ECCC /* Grade+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66511322747DCD20043ECCC /* Grade+CoreDataProperties.swift */; };
 		F6660CC327DBB723007DAC43 /* EditHomeworkSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6660CC227DBB723007DAC43 /* EditHomeworkSheet.swift */; };
-		F666D314273DC2D1002599D9 /* TU_Berlin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F666D301273DC2D0002599D9 /* TU_Berlin.xcdatamodeld */; };
 		F666D315273DC2D1002599D9 /* TU_Berlin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F666D301273DC2D0002599D9 /* TU_Berlin.xcdatamodeld */; };
 		F666D316273DC2D1002599D9 /* TU_BerlinApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F666D303273DC2D0002599D9 /* TU_BerlinApp.swift */; };
 		F666D317273DC2D1002599D9 /* TU_BerlinApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F666D303273DC2D0002599D9 /* TU_BerlinApp.swift */; };
@@ -344,7 +343,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1300;
-				LastUpgradeCheck = 1400;
+				LastUpgradeCheck = 1410;
 				TargetAttributes = {
 					F666D30A273DC2D1002599D9 = {
 						CreatedOnToolsVersion = 13.0;
@@ -410,14 +409,11 @@
 				F6AC2EA7276201AF009A0798 /* HomeworkDetailSheet.swift in Sources */,
 				F666D338273DD9BA002599D9 /* CustomNavLink.swift in Sources */,
 				F69F69F2273FD6CF008A42A4 /* CustomTabView.swift in Sources */,
-				F666D333273DD010002599D9 /* ExamView.swift in Sources */,
-				F666D331273DD00A002599D9 /* HomeworkView.swift in Sources */,
 				F666D32F273DCC31002599D9 /* Settings.swift in Sources */,
 				F6AC2E992760F69C009A0798 /* Appointment+CoreDataProperties.swift in Sources */,
 				F64F9C102792FF20001898C5 /* ExamDetailSheet.swift in Sources */,
 				F66511332747DCD20043ECCC /* Homework+CoreDataClass.swift in Sources */,
 				F6AC2E9B27614590009A0798 /* AddSubjects.swift in Sources */,
-				F666D314273DC2D1002599D9 /* TU_Berlin.xcdatamodeld in Sources */,
 				F66511372747DCD20043ECCC /* Grade+CoreDataClass.swift in Sources */,
 				F6B77D4C2747E34A000DE3E6 /* KeyCard+CoreDataClass.swift in Sources */,
 				F64F9C0E2792FAC2001898C5 /* AddExamSheet.swift in Sources */,
@@ -434,44 +430,15 @@
 				F666D335273DD0E2002599D9 /* Timer.swift in Sources */,
 				F6AC2E952760EDAB009A0798 /* Schedule.swift in Sources */,
 				F6AC2E9E2761496C009A0798 /* Subjects+CoreDataClass.swift in Sources */,
-				F6AC2E9F2761496C009A0798 /* Subjects+CoreDataProperties.swift in Sources */,
-				F666D333273DD010002599D9 /* ExamView.swift in Sources */,
-				F66511382747DCD20043ECCC /* Grade+CoreDataProperties.swift in Sources */,
 				F6B181D328EC9FC000447177 /* EditExamSheet.swift in Sources */,
 				F6B1818428E22CF100447177 /* Categories+CoreDataClass.swift in Sources */,
-				F666D331273DD00A002599D9 /* HomeworkView.swift in Sources */,
-				F6AC2EA7276201AF009A0798 /* HomeworkDetailSheet.swift in Sources */,
-				F666D338273DD9BA002599D9 /* CustomNavLink.swift in Sources */,
-				F69F69F2273FD6CF008A42A4 /* CustomTabView.swift in Sources */,
-				F666D32F273DCC31002599D9 /* Settings.swift in Sources */,
-				F6AC2E992760F69C009A0798 /* Appointment+CoreDataProperties.swift in Sources */,
 				F64F9C1227930F20001898C5 /* About.swift in Sources */,
-				F64F9C102792FF20001898C5 /* ExamDetailSheet.swift in Sources */,
-				F66511332747DCD20043ECCC /* Homework+CoreDataClass.swift in Sources */,
 				F6A617C127DA8E9200F6C8A3 /* Notifications.swift in Sources */,
-				F6AC2E9B27614590009A0798 /* AddSubjects.swift in Sources */,
-				F666D314273DC2D1002599D9 /* TU_Berlin.xcdatamodeld in Sources */,
-				F66511372747DCD20043ECCC /* Grade+CoreDataClass.swift in Sources */,
-				F6B77D4C2747E34A000DE3E6 /* KeyCard+CoreDataClass.swift in Sources */,
 				F6B1818528E22CF100447177 /* Categories+CoreDataProperties.swift in Sources */,
-				F64F9C0E2792FAC2001898C5 /* AddExamSheet.swift in Sources */,
 				F64F9C14279310E4001898C5 /* MailView.swift in Sources */,
-				F61380A62756D3B80020D0D9 /* AddHomeworkSheet.swift in Sources */,
-				F66511342747DCD20043ECCC /* Homework+CoreDataProperties.swift in Sources */,
-				F6B77D492747E0EE000DE3E6 /* KeycardView.swift in Sources */,
-				F666D32B273DC910002599D9 /* ViewRouter.swift in Sources */,
 				F6660CC327DBB723007DAC43 /* EditHomeworkSheet.swift in Sources */,
 				F6B1818728E22F3100447177 /* SetCategories.swift in Sources */,
-				F69F69F4273FD6F2008A42A4 /* CustomTabItem.swift in Sources */,
-				F6B77D502747E590000DE3E6 /* SafariView.swift in Sources */,
-				F6AC2E982760F69C009A0798 /* Appointment+CoreDataClass.swift in Sources */,
-				F69F69F9273FD8BB008A42A4 /* Grades.swift in Sources */,
-				F666D329273DC3BE002599D9 /* Tabs.swift in Sources */,
-				F666D318273DC2D1002599D9 /* ContentView.swift in Sources */,
-				F666D335273DD0E2002599D9 /* Timer.swift in Sources */,
 				F659AE3F27EA062900EAECD3 /* CreditsAndLegal.swift in Sources */,
-				F6AC2E952760EDAB009A0798 /* Schedule.swift in Sources */,
-				F6AC2E9E2761496C009A0798 /* Subjects+CoreDataClass.swift in Sources */,
 				F666D32D273DCC1F002599D9 /* Home.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -482,7 +449,6 @@
 			files = (
 				F69F69F7273FD846008A42A4 /* ViewRouter.swift in Sources */,
 				F6A617C227DA8E9200F6C8A3 /* Notifications.swift in Sources */,
-				F69F69F7273FD846008A42A4 /* ViewRouter.swift in Sources */,
 				F666D317273DC2D1002599D9 /* TU_BerlinApp.swift in Sources */,
 				F666D31B273DC2D1002599D9 /* Persistence.swift in Sources */,
 				F666D315273DC2D1002599D9 /* TU_Berlin.xcdatamodeld in Sources */,
