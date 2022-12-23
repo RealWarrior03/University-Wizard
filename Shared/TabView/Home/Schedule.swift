@@ -61,6 +61,7 @@ struct Schedule: View {
                 if item.day == selectedDay /*&& item.type == selectedType*/ {
                     Section {
                         NavigationLink {
+                            #warning("V1.1: make events editable")
                             Text("editing coming soon")
                         } label: {
                             ScheduleItem(title: item.title, start: item.start, end: item.end, day: item.day, type: item.type)
@@ -173,7 +174,7 @@ struct AppointmentSheet: View {
                         }
                     }.pickerStyle(.menu)
                 }
-            }.navigationTitle("Add Class")
+            }.navigationTitle("Add Event")
             .overlay {
                 VStack {
                     Spacer()
@@ -194,7 +195,7 @@ struct AppointmentSheet: View {
                                 print(error.localizedDescription)
                             }
                         } label: {
-                            Label("Save Class", systemImage: "square.and.arrow.down")
+                            Label("Save Event", systemImage: "square.and.arrow.down")
                         }.buttonStyle(.borderedProminent)
                     }.padding()
                 }

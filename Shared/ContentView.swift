@@ -50,6 +50,11 @@ class UserData: ObservableObject {
             UserDefaults.standard.set(defaultDueTime, forKey: "defaultDueTime")
         }
     }
+    @Published var defaultExamTime: Date {
+        didSet {
+            UserDefaults.standard.set(defaultExamTime, forKey: "defaultExamTime")
+        }
+    }
     @Published var highlightDue: Bool {
         didSet {
             UserDefaults.standard.set(highlightDue, forKey: "highlightDue")
@@ -100,6 +105,7 @@ class UserData: ObservableObject {
         self.colorTM = UserDefaults.standard.object(forKey: "colorTM") as? Color ?? .accentColor.opacity(0.3)
         
         self.defaultDueTime = UserDefaults.standard.object(forKey: "defaultDueTime") as? Date ?? Date()
+        self.defaultExamTime = UserDefaults.standard.object(forKey: "defaultExamTime") as? Date ?? Date()
         self.highlightDue = UserDefaults.standard.object(forKey: "highlightDue") as? Bool ?? true
         
         self.websiteOneURL = UserDefaults.standard.object(forKey: "websiteOneURL") as? String ?? ""

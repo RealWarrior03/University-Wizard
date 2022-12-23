@@ -72,7 +72,16 @@ struct ExamView: View {
                                             Spacer()
                                             Text(exams[exam].subject).foregroundColor(.secondary).font(.footnote)
                                         }
-                                        Text("\(exams[exam].due, formatter: Self.examDateFormatter)").font(.callout)
+                                        if UserData().highlightDue {
+                                            if Date().addingTimeInterval(86400) >= exams[exam].due {
+                                                Text("\(exams[exam].due, formatter: Self.examDateFormatter)").font(.callout).foregroundColor(.red)
+                                            } else {
+                                                Text("\(exams[exam].due, formatter: Self.examDateFormatter)").font(.callout)
+                                            }
+                                        } else {
+                                            Text("\(exams[exam].due, formatter: Self.examDateFormatter)").font(.callout)
+                                        }
+                                        //Text("\(exams[exam].due, formatter: Self.examDateFormatter)").font(.callout)
                                         /*if homework[hw].comment != "" {
                                             Text(homework[hw].comment).lineLimit(3).font(.footnote).foregroundColor(.secondary)
                                         }*/
@@ -181,6 +190,7 @@ struct ExamView: View {
                 }.padding(.bottom, 100)
                 .navigationTitle("Exams")
                 .toolbar {
+                    #warning("TODO: align text to the left")
                     ToolbarItem(placement: .navigationBarLeading) {
                         Picker("", selection: $showType) {
                             Text("Upcoming").tag("upcoming")
@@ -199,7 +209,7 @@ struct ExamView: View {
             }.sheet(item: $examOptions) { item in
                 switch item {
                 case .add:
-                    AddExamSheet()
+                    AddExamSheet(due: createDueDate(input: UserData().defaultExamTime), notification: createDueDate(input: UserData().defaultExamTime).addingTimeInterval(-86400))
                 case .detail:
                     ExamDetailSheet(examData: self.exams[examIndex])
                 }

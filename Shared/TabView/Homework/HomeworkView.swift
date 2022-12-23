@@ -224,10 +224,26 @@ struct HomeworkView: View {
         }.sheet(item: $homeworkOptions) { item in
             switch item {
             case .add:
-                AddHomeworkSheet()
+                AddHomeworkSheet(due: createDueDate(input: UserData().defaultDueTime), notifyTime: createDueDate(input: UserData().defaultDueTime).addingTimeInterval(-86400))
             case .detail:
                 HomeworkDetailSheet(homeworkData: self.homework[hwIndex], hwIndex: self.hwIndex)
             }
         }
     }
+}
+
+func createDueDate(input: Date) -> Date {
+    let start = Calendar.current.dateComponents([.hour, .minute], from: input)
+    let tomorrow = Calendar.current.dateComponents([.day, .month, .year], from: Date())
+    
+    var final = DateComponents()
+    final.day = tomorrow.day
+    final.month = tomorrow.month
+    final.year = tomorrow.year
+    final.hour = start.hour
+    final.minute = start.minute
+    let result = Calendar.current.date(from: final)!
+    let notify = result.addingTimeInterval(-86400)
+    
+    return result
 }

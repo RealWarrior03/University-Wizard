@@ -36,9 +36,9 @@ struct AddHomeworkSheet: View {
     @State var comment: String = ""
     @State var subject: String = ""
     @State var id: UUID = UUID()
-    @State var due: Date = UserData().defaultDueTime
+    @State var due: Date
     @State var notify: Bool = false
-    @State var notifyTime: Date = Date().addingTimeInterval(86400)
+    @State var notifyTime: Date //= Date().addingTimeInterval(86400)
     
     var body: some View {
         NavigationView {
@@ -117,6 +117,6 @@ struct AddHomeworkSheet: View {
 
 struct AddHomeworkSheet_Previews: PreviewProvider {
     static var previews: some View {
-        AddHomeworkSheet()
+        AddHomeworkSheet(due: Date(), notifyTime: Date())
     }
 }
